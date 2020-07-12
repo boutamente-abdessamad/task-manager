@@ -1,0 +1,964 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Task manager</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../packages/bootstrap/css/bootstrap.min.css">
+    <!-- font-awesom styles  -->
+    <link rel="stylesheet" href="../packages/font-awesome/font-awesome.min.css">
+    <!-- font-awesom styles  -->
+    <!-- dateTimepiker style  -->
+    <link rel="stylesheet" href="../packages/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <!-- dateTimepiker style  -->
+    <!-- bootstrap select  -->
+    <link rel="stylesheet" href="../packages/bootstrap-select/css/bootstrap-select.min.css">
+    <!-- end bootstrap select -->
+    <!-- animate -->
+    <link rel="stylesheet" href="../packages/animate/css/animate.min.css" />
+    <!-- end animate -->
+    <!-- main style (principale app style)  -->
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+
+
+    <!-- start app root  -->
+    <main class="app-root">
+
+
+        <!-- header  -->
+
+        <header class="tm-header">
+
+            <nav>
+
+                <!-- logo  -->
+                <a href="" class="tm-logo">
+                    <img src="../library/logo/Logo.svg" alt="">
+                </a>
+
+                <!-- menu  -->
+                <ul class="tm-menu-items">
+                    <li>
+                        <a href="">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="" class="active">Tâches</a>
+                    </li>
+                </ul>
+
+                <!-- notifications  -->
+
+                <div class="notifications-area">
+
+                    <div class="notification-box">
+
+                        <div class="notification-bell-card">
+                            <a href="" class="notification-bell-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="bell-icon" src="../icons/bell.svg" alt="">
+                                <span class="notification-alert">1</span>
+                            </a>
+                            <div class="dropdown-menu">
+
+                                <div class="notification-items">
+                                    <div class="notification-item">
+                                        <div class="notification-icon">
+                                            <img src="../icons/time-red.svg" alt="">
+                                        </div>
+                                        <div class="notification-details">
+                                            <h2>La tâche 132 arrive à échéance aujourd’hui à 16h45</h2>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="notification-icon">
+                                            <img src="../icons/time-red.svg" alt="">
+                                        </div>
+                                        <div class="notification-details">
+                                            <h2>La tâche 132 arrive à échéance aujourd’hui à 16h45</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="notification-box">
+
+                        <div class="notification-user-card">
+                            <a href="" class="notification-user-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="user-icon" src="../library/avatars/user.png" alt="">
+                            </a>
+                            <div class="dropdown-menu">
+
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <!-- header  -->
+
+        <!-- page title  -->
+        <section class="page-head-area">
+
+            <div class="container-fluid">
+
+                <div class="page-head-box">
+
+                    <h2 class="page-title">Triage des tâches</h2>
+
+                    <div class="page-head-actions">
+
+                        <a href="" class="ui-button-primiry btn" data-toggle="modal" data-target="#addTask">Nouvelle tâche</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- end page title  -->
+
+
+        <!-- table section  -->
+        <section class="table-section">
+
+            <div class="container-fluid">
+
+                <table class="table ui-table triage-tasks-table">
+                    <thead class="table-head">
+                        <tr>
+                            <th colspan="2">TÂCHE</th>
+                            <th>CLIENT</th>
+                            <th>SOURCES</th>
+                            <th>TYPE</th>
+                            <th>DEADLINE</th>
+                            <th colspan="3">L’ÉQUIPE</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+
+                        <!-- tr  -->
+                        <tr>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <a href="" class="ui-star">
+                                    <img src="../icons/star.svg" alt="">
+                                </a>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <div class="table-task-details">
+                                    <h5>Préparation TVA Mensuelle</h5>
+                                    <p class="text-default">JUIN 2020</p>
+                                    <button class="ui-button-toggle default btn-md mt-2 under-triaged-tasks-toggle">
+                                        Sous-tâches
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                </select>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>Email</option>
+                                    <option>Email</option>
+                                    <option>Email</option>
+                                </select>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                </select>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <button class="ui-button-toggle default set-date-limit-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                    <span>12/06/2020</span>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <div class="utasks-collaborateus">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <a href="" class="ui-plus">+</a>
+                                </div>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <button class="ui-button-approve">
+                                    <img src="../icons/approve.svg" alt="">
+                                </button>
+                                <button class="ui-button-refuse">
+                                    <img src="../icons/refuse.svg" alt="">
+                                </button>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <button class="ui-button-letter">
+                                    <img src="../icons/letter.svg" alt="">
+                                </button>
+                            </td>
+
+                        </tr>
+                        <tr class="triage-under-tasks-row">
+
+                            <td colspan="9">
+
+                                <div class="triage-under-tasks ui-shadow animate__animated animate__pulse">
+
+                                    <div class="triage-under-tasks-empty">
+
+                                        <img src="../icons/wecount-gray.svg" alt="">
+                                        <h2 class="text-default">Vous n’avez actuellement <br> aucune sous-tâche</h2>
+                                        <button class="ui-button-primiry" data-toggle="modal" data-target="#addUnderTask">Ajouter une sous-tâche</button>
+
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+                        <!-- tr  -->
+                        <tr>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <a href="" class="ui-star">
+                                    <img src="../icons/star.svg" alt="">
+                                </a>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <div class="table-task-details">
+                                    <h5>Préparation TVA Mensuelle</h5>
+                                    <p class="text-default">JUIN 2020</p>
+                                    <button class="ui-button-toggle default btn-md mt-2 under-triaged-tasks-toggle">
+                                        Sous-tâches
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                </select>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>Email</option>
+                                    <option>Email</option>
+                                    <option>Email</option>
+                                </select>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                </select>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <button class="ui-button-toggle default">
+                                    12/06/2020
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <div class="utasks-collaborateus">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <a href="" class="ui-plus">+</a>
+                                </div>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <button class="ui-button-approve">
+                                    <img src="../icons/approve.svg" alt="">
+                                </button>
+                                <button class="ui-button-refuse">
+                                    <img src="../icons/refuse.svg" alt="">
+                                </button>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <button class="ui-button-letter">
+                                    <img src="../icons/letter.svg" alt="">
+                                </button>
+                            </td>
+
+                        </tr>
+                        <tr class="triage-under-tasks-row">
+                            <td colspan="9">
+                                <div class="ui-list shadow animate__animated animate__pulse">
+                                    <!-- task  -->
+                                    <div class="ui-list-item">
+                                        <div class="table-task-details">
+                                            <div class="ui-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="check"> <span class="label-display"></span>
+                                                </label>
+                                            </div>
+                                            <a href="" class="ui-star">
+                                                <img src="../icons/star.svg" alt="">
+                                            </a>
+                                            <h5>Préparation TVA Mensuelle</h5>
+                                        </div>
+                                        <div class="utasks-collaborateus">
+                                            <!-- users-attatched -->
+                                            <div class="users-attatched mt-0">
+                                                <img src="../library/avatars/user.png" alt="">
+                                                <img src="../library/avatars/user.png" alt="">
+                                                <span class="more-attatched">+4</span>
+                                            </div>
+                                            <a href="" class="ui-plus" data-toggle="modal" data-target="#addTaskCollaborateurs">+</a>
+                                            <span class="ml-2 text-primary" data-toggle="modal" data-target="#addTaskCollaborateurs">Ajouter un collaborateur</span>
+                                        </div>
+
+                                        <button class="ui-delete">
+                                            <img src="../icons/delete-button.svg" alt="">
+                                            Supprimer
+                                        </button>
+
+                                    </div>
+                                    <!-- task  -->
+                                    <div class="ui-list-item">
+                                        <div class="table-task-details">
+                                            <div class="ui-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="check"> <span class="label-display"></span>
+                                                </label>
+                                            </div>
+                                            <a href="" class="ui-star">
+                                                <img src="../icons/star.svg" alt="">
+                                            </a>
+                                            <h5>Préparation TVA Mensuelle</h5>
+                                        </div>
+                                        <div class="utasks-collaborateus">
+                                            <!-- users-attatched -->
+                                            <div class="users-attatched mt-0">
+                                                <img src="../library/avatars/user.png" alt="">
+                                                <img src="../library/avatars/user.png" alt="">
+                                                <span class="more-attatched">+4</span>
+                                            </div>
+                                            <a href="" class="ui-plus">+</a>
+                                            <span class="ml-2 text-primary">Ajouter un collaborateur</span>
+                                        </div>
+
+                                        <button class="ui-delete">
+                                            <img src="../icons/delete-button.svg" alt="">
+                                            Supprimer
+                                        </button>
+
+                                    </div>
+
+                                </div>
+                                <a href="" class="text-primary add-under-task-link">
+                                    +  Nouvelle sous-tâche
+                                </a>
+                            </td>
+                        </tr>
+                        <!-- tr  -->
+                        <tr>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <a href="" class="ui-star">
+                                    <img src="../icons/star.svg" alt="">
+                                </a>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <div class="table-task-details">
+                                    <h5>Préparation TVA Mensuelle</h5>
+                                    <p class="text-default">JUIN 2020</p>
+                                    <button class="ui-button-toggle default btn-md mt-2">
+                                        Sous-tâches
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                </select>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>Email</option>
+                                    <option>Email</option>
+                                    <option>Email</option>
+                                </select>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                </select>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <button class="ui-button-toggle default">
+                                    12/06/2020
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <div class="utasks-collaborateus">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <a href="" class="ui-plus">+</a>
+                                </div>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <button class="ui-button-approve">
+                                    <img src="../icons/approve.svg" alt="">
+                                </button>
+                                <button class="ui-button-refuse">
+                                    <img src="../icons/refuse.svg" alt="">
+                                </button>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <button class="ui-button-letter">
+                                    <img src="../icons/letter.svg" alt="">
+                                </button>
+                            </td>
+
+                        </tr>
+
+                        <!-- tr  -->
+                        <tr>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <a href="" class="ui-star">
+                                    <img src="../icons/star.svg" alt="">
+                                </a>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <div class="table-task-details">
+                                    <h5>Préparation TVA Mensuelle</h5>
+                                    <p class="text-default">JUIN 2020</p>
+                                    <button class="ui-button-toggle default btn-md mt-2">
+                                        Sous-tâches
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                </select>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>Email</option>
+                                    <option>Email</option>
+                                    <option>Email</option>
+                                </select>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                </select>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <button class="ui-button-toggle default">
+                                    12/06/2020
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <div class="utasks-collaborateus">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <a href="" class="ui-plus">+</a>
+                                </div>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <button class="ui-button-approve">
+                                    <img src="../icons/approve.svg" alt="">
+                                </button>
+                                <button class="ui-button-refuse">
+                                    <img src="../icons/refuse.svg" alt="">
+                                </button>
+                            </td>
+                            <!-- td  -->
+                            <td class="td-col">
+                                <button class="ui-button-letter">
+                                    <img src="../icons/letter.svg" alt="">
+                                </button>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+        <!-- table section  -->
+        <!--==================================================-->
+        <!--=================== Modals  ======================-->
+        <!--==================================================-->
+
+
+        <!--==================================================-->
+        <!--============= Under task modals  =================-->
+        <!--==================================================-->
+
+        <div class="modal fade" id="addUnderTask" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Nouvelle sous-tâche</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="../icons/close.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" name="" class="form-control" placeholder="Titre de la sous-tâche">
+                            </div>
+                            <div class="form-group">
+                                <button class="ui-button-primary-light btn-xl w-100 show-collaborateurs-panel">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    Ajouter des collaborateurs
+                                </button>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="ui-button-primiry btn-xl w-100 disabled" disabled>
+                                    Ajouter la sous-tâche
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- add Collaborateurs -->
+        <div class="modal fade" id="addTaskCollaborateurs" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Nouveau collaborateur</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="../icons/close.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="text-default no-items-title">Vous n’avez aucun collaborateur actuellement.
+                        </h2>
+                        <form action="">
+                            <div class="form-group">
+                                <button class="ui-button-primary-light btn-xl w-100 show-collaborateurs-panel">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    Ajouter des collaborateurs
+                                </button>
+                            </div>
+                            <div class="collaborateurs-already-added">
+                                <h2 class="text-default">COLLABORATEURS DÉJÀ AJOUTÉS</h2>
+                                <div class="ca-added-items">
+                                    <img src="../library/avatars/user.png" alt="">
+                                    <img src="../library/avatars/user.png" alt="">
+                                    <img src="../library/avatars/user.png" alt="">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- new task  -->
+        <div class="modal fade" id="addTask" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Nouvelle tâche</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="../icons/close.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="form-group col-12">
+                                    <input type="text" name="" class="form-control" placeholder="Titre de la tâche">
+                                </div>
+                                <div class="form-group col-12">
+                                    <textarea name="" class="form-control" rows="3" placeholder="Détails de la tâche"></textarea>
+                                </div>
+                                <div class="form-group col-6">
+                                    <select class="selectpicker ui-select ui-select-default w-100 ui-select-xl" name="" id="">
+                                        <option>Client</option>
+                                        <option>Client</option>
+                                        <option>Client</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <select class="selectpicker ui-select ui-select-default w-100 ui-select-xl" name="" id="">
+                                        <option>Type</option>
+                                        <option>Type</option>
+                                        <option>Type</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label>Collaborateurs</label>
+                                    <a href="" class="mt-2  show-collaborateurs-panel w-75 d-flex">
+                                        <span class="ui-plus">+</span>
+                                    </a>
+                                    <div class="users-attatched mt-2">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label>Date limite de traitement :</label>
+                                    <div class="date-input">
+                                        <input type="text" name="" class="form-control init-datetimepicker">
+                                    </div>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label>Source : </label>
+                                    <div class="source-conrollers">
+                                        <label for="r-message" data-toggle="tooltip" data-placement="bottom" title="Réunion">
+                                            <img src="../icons/letter-default.svg" alt="">
+                                            <img src="../icons/letter.svg" alt="">
+                                            <input type="radio" name="r-source" id="r-message">
+                                        </label>
+                                        <label for="r-phone" data-toggle="tooltip" data-placement="bottom" title="Réunion">
+                                            <img src="../icons/call.svg" alt="">
+                                            <img src="../icons/call-primary.svg" alt="">
+                                            <input type="radio" name="r-source" id="r-phone">
+                                        </label>
+                                        <label for="r-meeting" data-toggle="tooltip" data-placement="bottom" title="Réunion">
+                                            <img src="../icons/meeting.svg" alt="">
+                                            <img src="../icons/meeting-primary.svg" alt="">
+                                            <input type="radio" name="r-source" id="r-meeting">
+                                        </label>
+                                        <label for="r-unknow" data-toggle="tooltip" data-placement="bottom" title="Réunion">
+                                            <img src="../icons/unknow.svg" alt="">
+                                            <img src="../icons/unknow-primary.svg" alt="">
+                                            <input type="radio" name="r-source" id="r-unknow">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12">
+                                    <input type="submit" value="Ajouter la tâche" class="ui-button-primiry btn-xl disabled w-100" disabled>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--==================================================-->
+        <!--============= Add filer modal  =================-->
+        <!--==================================================-->
+
+        <!-- note  -->
+        <!-- to user modal in button add this code to your button in remove auto show in main.js -->
+        <!-- data-toggle="modal" data-target="#addTask" -->
+
+        <div class="modal fade" id="addFilter" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Filtrer les tâches</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="../icons/close.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="form-group col-6">
+                                    <label>Collaborateurs</label>
+                                    <select class="selectpicker ui-select ui-select-default w-100 ui-select-xl" name="" id="">
+                                        <option>Tous</option>
+                                        <option>Tous</option>
+                                        <option>Tous</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label>Clients</label>
+                                    <select class="selectpicker ui-select ui-select-default w-100 ui-select-xl" name="" id="">
+                                        <option>PHILIPS</option>
+                                        <option>PHILIPS</option>
+                                        <option>PHILIPS</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label>Famille</label>
+                                    <select class="selectpicker ui-select ui-select-default w-100 ui-select-xl" name="" id="">
+                                        <option>TVA</option>
+                                        <option>TVA</option>
+                                        <option>TVA</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label>Etat</label>
+                                    <select class="selectpicker ui-select ui-select-default w-100 ui-select-xl" name="" id="">
+                                        <option>En cours</option>
+                                        <option>En cours</option>
+                                        <option>En cours</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label>Date de création</label>
+                                    <select class="selectpicker ui-select ui-select-default w-100 ui-select-xl" name="" id="">
+                                        <option>1 Mai 2020</option>
+                                        <option>1 Mai 2020</option>
+                                        <option>1 Mai 2020</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label>Deadline</label>
+                                    <select class="selectpicker ui-select ui-select-default w-100 ui-select-xl" name="" id="">
+                                        <option>-</option>
+                                        <option>-</option>
+                                        <option>-</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label>Périodicité</label>
+                                    <select class="selectpicker ui-select ui-select-default w-100 ui-select-xl" name="" id="">
+                                        <option>Mensuelle</option>
+                                        <option>Mensuelle</option>
+                                        <option>Mensuelle</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-4">
+                                    <div class="ui-checkbox">
+                                        <label>
+                                            <input type="checkbox" name="check">  
+                                            <span class="label-display">Ayant des fichiers joints</span>
+                                            
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-4">
+                                    <div class="ui-checkbox">
+                                        <label>
+                                            <input type="checkbox" name="check">  
+                                            <span class="label-display">Ayant des échanges</span>
+                                            
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-4">
+                                    <div class="ui-checkbox">
+                                        <label>
+                                            <input type="checkbox" name="check">  
+                                            <span class="label-display">Que les tâches récurrentes</span>
+                                            
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 d-flex justify-content-center">
+                                    <input type="submit" value="Appliquer le filtre" class="ui-button-primiry btn-lg mr-3">
+                                    <button class="ui-button-primary-light  btn-lg">Reinitialiser</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--==================================================-->
+        <!--=============== COLLABORATEURS LIST PANEL  =======-->
+        <!--==================================================-->
+        <div class="add-collaborateurs-panel shadow animate__animated animate__fadeInUp">
+            <div class="acp-head">
+                <h2 class="text-default">COLLABORATEURS</h2>
+                <button type="button" class="close close-collaborateurs-panel">
+                    <img src="../icons/close.svg" alt="">
+                </button>
+            </div>
+            <div class="acp-body">
+                <div class="collaborateurs-list">
+                    <div class="collaborateur-item">
+                        <div class="form-check">
+                            <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                        </div>
+                    </div>
+                    <div class="collaborateur-item">
+                        <div class="form-check">
+                            <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                        </div>
+                    </div>
+                    <div class="collaborateur-item">
+                        <div class="form-check">
+                            <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                        </div>
+                    </div>
+                    <div class="collaborateur-item">
+                        <div class="form-check">
+                            <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                        </div>
+                    </div>
+                    <div class="collaborateur-item">
+                        <div class="form-check">
+                            <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="acp-footer">
+                <button class="ui-button-primiry btn-xl w-100">
+                    Ajouter
+                </button>
+            </div>
+        </div>
+        <!--==================================================-->
+        <!--=============== Update date popover  =======-->
+        <!--==================================================-->
+        <div id="datePopover" class="d-none">
+            <div class="popover-body">
+                <div class="row date-popover-row">
+                    <div class="col-7">
+                        <div class="setdate-limit"></div>
+                    </div>
+                    <div class="col-5">
+                        <h3>Ceci est juste un exemple</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- End app root  -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../packages/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="../packages/bootstrap/js/popper.min.js"></script>
+    <script src="../packages/bootstrap/js/bootstrap.min.js"></script>
+    <!-- dateTimepeaker scripts  -->
+    <script src="../packages/moment/moment-with-locales.js"></script>
+    <script src="../packages/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <!-- End dateTimepeaker scripts  -->
+    <!-- bootstrap-select  -->
+    <script src="../packages/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <!-- end bootstrap-select  -->
+    <!-- main script (principale app script)  -->
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>

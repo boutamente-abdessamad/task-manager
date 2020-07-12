@@ -1,0 +1,1949 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Task manager</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../packages/bootstrap/css/bootstrap.min.css">
+    <!-- font-awesom styles  -->
+    <link rel="stylesheet" href="../packages/font-awesome/font-awesome.min.css">
+    <!-- font-awesom styles  -->
+    <!-- dateTimepiker style  -->
+    <link rel="stylesheet" href="../packages/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <!-- dateTimepiker style  -->
+    <!-- bootstrap select  -->
+    <link rel="stylesheet" href="../packages/bootstrap-select/css/bootstrap-select.min.css">
+    <!-- end bootstrap select -->
+    <!-- animate -->
+    <link rel="stylesheet" href="../packages/animate/css/animate.min.css" />
+    <!-- end animate -->
+    <!-- main style (principale app style)  -->
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+
+
+    <!-- start app root  -->
+    <main class="app-root">
+
+
+        <!-- header  -->
+
+        <header class="tm-header">
+
+            <nav>
+
+                <!-- logo  -->
+                <a href="" class="tm-logo">
+                    <img src="../library/logo/Logo.svg" alt="">
+                </a>
+
+                <!-- menu  -->
+                <ul class="tm-menu-items">
+                    <li>
+                        <a href="">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="" class="active">Tâches</a>
+                    </li>
+                </ul>
+
+                <!-- notifications  -->
+
+                <div class="notifications-area">
+
+                    <div class="notification-box">
+
+                        <div class="notification-bell-card">
+                            <a href="" class="notification-bell-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="bell-icon" src="../icons/bell.svg" alt="">
+                                <span class="notification-alert">1</span>
+                            </a>
+                            <div class="dropdown-menu">
+
+                                <div class="notification-items">
+                                    <div class="notification-item">
+                                        <div class="notification-icon">
+                                            <img src="../icons/time-red.svg" alt="">
+                                        </div>
+                                        <div class="notification-details">
+                                            <h2>La tâche 132 arrive à échéance aujourd’hui à 16h45</h2>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="notification-icon">
+                                            <img src="../icons/time-red.svg" alt="">
+                                        </div>
+                                        <div class="notification-details">
+                                            <h2>La tâche 132 arrive à échéance aujourd’hui à 16h45</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="notification-box">
+
+                        <div class="notification-user-card">
+                            <a href="" class="notification-user-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="user-icon" src="../library/avatars/user.png" alt="">
+                            </a>
+                            <div class="dropdown-menu">
+
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <!-- header  -->
+
+        <!-- page title  -->
+        <section class="page-head-area">
+
+            <div class="container-fluid">
+
+                <div class="page-head-box">
+
+                    <h2 class="page-title">Liste des tâches</h2>
+
+                    <div class="page-head-actions">
+
+                        <select class="selectpicker ui-select ui-select-default ui-select-xl" name="" id="">
+                        <option>Filter</option>
+                        <option>Filter</option>
+                        <option>Filter</option>
+                      </select>
+
+                        <a href="" class="ui-button-primiry btn ml-2">Nouvelle tâche</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- end page title  -->
+
+
+        <!-- table section  -->
+        <section class="table-section">
+
+            <div class="container-fluid">
+
+                <table class="table ui-table tasks-list-table">
+                    <thead class="table-head">
+                        <tr>
+                            <th colspan="2">TÂCHE</th>
+                            <th>CLIENT</th>
+                            <th>TYPE</th>
+                            <th>DEADLINE</th>
+                            <th>ETAT</th>
+                            <th colspan="2">PROGRESSION</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+
+                        <!-- tr  -->
+                        <tr>
+
+                            <td class="td-col">
+                                <div class="reloading-icon">
+                                    <img src="../icons/reloading.svg" alt="">
+                                </div>
+                            </td>
+                            <td class="td-col">
+                                <div class="table-task-details">
+                                    <h5>Préparation TVA Mensuelle</h5>
+                                    <p class="text-primary">JUIN 2020</p>
+
+                                    <div class="task-infos">
+
+                                        <!-- users-attatched -->
+                                        <div class="users-attatched">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <img src="../library/avatars/user.png" alt="">
+                                        </div>
+
+                                        <div class="chat-notification">
+                                            <div class="message-alert has-message">
+                                                <img src="../icons/message.svg" alt="">
+                                            </div>
+                                            <small>6</small>
+                                        </div>
+
+                                        <div class="attatchments-box">
+                                            <img src="../icons/attachment.svg" alt="">
+                                            <small>3</small>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                </select>
+                            </td>
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                </select>
+                            </td>
+                            <td class="td-col">
+                                <p class="date-display">
+                                    10/07/2017
+                                </p>
+                                <button class="ui-button-toggle btn-md danger mt-3">
+                                    EN RETARD
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="td-col">
+                                <button class="ui-button-toggle btn-md warning under-tasks-toggle">
+                                    EN COURS 
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="td-col">
+                                <div class="task-progress">
+                                    <!-- progress-bar -->
+                                    <div class="progress-bar">
+                                        <span class="progress purple" style="width: 30%;"></span>
+                                    </div>
+                                    <p class="text-purple">30%</p>
+                                </div>
+
+
+                            </td>
+                            <td class="td-col">
+                                <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                    <div class="dotes-icon">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </button>
+                            </td>
+
+                        </tr>
+                        <!-- tr under tasks  -->
+                        <tr class="under-tasks-table-row">
+                            <td class="td-col" colspan="8">
+
+                                <div class="under-tasks-area animate__animated animate__pulse">
+
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+                        </tr>
+                        <!-- tr  -->
+                        <tr>
+
+                            <td class="td-col">
+                                <div class="reloading-icon">
+                                    <img src="../icons/reloading.svg" alt="">
+                                </div>
+                            </td>
+                            <td class="td-col">
+                                <div class="table-task-details">
+                                    <h5>Préparation TVA Mensuelle</h5>
+                                    <p class="text-primary">JUIN 2020</p>
+
+                                    <div class="task-infos">
+
+                                        <!-- users-attatched -->
+                                        <div class="users-attatched">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <img src="../library/avatars/user.png" alt="">
+                                        </div>
+
+                                        <div class="chat-notification">
+                                            <div class="message-alert has-message">
+                                                <img src="../icons/message.svg" alt="">
+                                            </div>
+                                            <small>6</small>
+                                        </div>
+
+                                        <div class="attatchments-box">
+                                            <img src="../icons/attachment.svg" alt="">
+                                            <small>3</small>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                </select>
+                            </td>
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                </select>
+                            </td>
+                            <td class="td-col">
+                                <p class="date-display">
+                                    10/07/2017
+                                </p>
+                                <button class="ui-button-toggle btn-md danger mt-3">
+                                    EN RETARD
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="td-col">
+                                <button class="ui-button-toggle btn-md success under-tasks-toggle">
+                                    EN COURS 
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="td-col">
+                                <div class="task-progress">
+                                    <!-- progress-bar -->
+                                    <div class="progress-bar">
+                                        <span class="progress success" style="width: 30%;"></span>
+                                    </div>
+                                    <p class="text-success">30%</p>
+                                </div>
+
+
+                            </td>
+                            <td class="td-col">
+                                <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                    <div class="dotes-icon">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- tr under tasks  -->
+                        <tr class="under-tasks-table-row">
+                            <td class="td-col" colspan="8">
+
+                                <div class="under-tasks-area animate__animated animate__pulse">
+
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+                        </tr>
+                        <!-- tr  -->
+                        <tr>
+
+                            <td class="td-col">
+                                <div class="reloading-icon">
+                                    <img src="../icons/reloading.svg" alt="">
+                                </div>
+                            </td>
+                            <td class="td-col">
+                                <div class="table-task-details">
+                                    <h5>Préparation TVA Mensuelle</h5>
+                                    <p class="text-primary">JUIN 2020</p>
+
+                                    <div class="task-infos">
+
+                                        <!-- users-attatched -->
+                                        <div class="users-attatched">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <img src="../library/avatars/user.png" alt="">
+                                        </div>
+
+                                        <div class="chat-notification">
+                                            <div class="message-alert has-message">
+                                                <img src="../icons/message.svg" alt="">
+                                            </div>
+                                            <small>6</small>
+                                        </div>
+
+                                        <div class="attatchments-box">
+                                            <img src="../icons/attachment.svg" alt="">
+                                            <small>3</small>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                </select>
+                            </td>
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                </select>
+                            </td>
+                            <td class="td-col">
+                                <p class="date-display">
+                                    10/07/2017
+                                </p>
+                                <button class="ui-button-toggle btn-md danger mt-3">
+                                    EN RETARD
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="td-col">
+                                <button class="ui-button-toggle btn-md primary under-tasks-toggle">
+                                    EN COURS 
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="td-col">
+                                <div class="task-progress">
+                                    <!-- progress-bar -->
+                                    <div class="progress-bar">
+                                        <span class="progress danger" style="width: 30%;"></span>
+                                    </div>
+                                    <p class="text-danger">30%</p>
+                                </div>
+
+
+                            </td>
+                            <td class="td-col">
+                                <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                    <div class="dotes-icon">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- tr under tasks  -->
+                        <tr class="under-tasks-table-row">
+                            <td class="td-col" colspan="8">
+
+                                <div class="under-tasks-area animate__animated animate__pulse">
+
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+                        </tr>
+                        <!-- tr  -->
+                        <tr>
+
+                            <td class="td-col">
+                                <div class="reloading-icon">
+                                    <img src="../icons/reloading.svg" alt="">
+                                </div>
+                            </td>
+                            <td class="td-col">
+                                <div class="table-task-details">
+                                    <h5>Préparation TVA Mensuelle</h5>
+                                    <p class="text-primary">JUIN 2020</p>
+
+                                    <div class="task-infos">
+
+                                        <!-- users-attatched -->
+                                        <div class="users-attatched">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <img src="../library/avatars/user.png" alt="">
+                                        </div>
+
+                                        <div class="chat-notification">
+                                            <div class="message-alert has-message">
+                                                <img src="../icons/message.svg" alt="">
+                                            </div>
+                                            <small>6</small>
+                                        </div>
+
+                                        <div class="attatchments-box">
+                                            <img src="../icons/attachment.svg" alt="">
+                                            <small>3</small>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                </select>
+                            </td>
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                </select>
+                            </td>
+                            <td class="td-col">
+                                <p class="date-display">
+                                    10/07/2017
+                                </p>
+                                <button class="ui-button-toggle btn-md danger mt-3">
+                                    EN RETARD
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="td-col">
+                                <button class="ui-button-toggle btn-md success under-tasks-toggle">
+                                    EN COURS 
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="td-col">
+                                <div class="task-progress">
+                                    <!-- progress-bar -->
+                                    <div class="progress-bar">
+                                        <span class="progress warning" style="width: 30%;"></span>
+                                    </div>
+                                    <p class="text-warning">30%</p>
+                                </div>
+
+
+                            </td>
+                            <td class="td-col">
+                                <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                    <div class="dotes-icon">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- tr under tasks  -->
+                        <tr class="under-tasks-table-row">
+                            <td class="td-col" colspan="8">
+
+                                <div class="under-tasks-area animate__animated animate__pulse">
+
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+                        </tr>
+                        <!-- tr  -->
+                        <tr>
+
+                            <td class="td-col">
+                                <div class="reloading-icon">
+                                    <img src="../icons/reloading.svg" alt="">
+                                </div>
+                            </td>
+                            <td class="td-col">
+                                <div class="table-task-details">
+                                    <h5>Préparation TVA Mensuelle</h5>
+                                    <p class="text-primary">JUIN 2020</p>
+
+                                    <div class="task-infos">
+
+                                        <!-- users-attatched -->
+                                        <div class="users-attatched">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <img src="../library/avatars/user.png" alt="">
+                                        </div>
+
+                                        <div class="chat-notification">
+                                            <div class="message-alert has-message">
+                                                <img src="../icons/message.svg" alt="">
+                                            </div>
+                                            <small>6</small>
+                                        </div>
+
+                                        <div class="attatchments-box">
+                                            <img src="../icons/attachment.svg" alt="">
+                                            <small>3</small>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                </select>
+                            </td>
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                </select>
+                            </td>
+                            <td class="td-col">
+                                <p class="date-display">
+                                    10/07/2017
+                                </p>
+                                <button class="ui-button-toggle btn-md danger mt-3">
+                                    EN RETARD
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="td-col">
+                                <button class="ui-button-toggle btn-md purple under-tasks-toggle">
+                                    EN COURS 
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="td-col">
+                                <div class="task-progress">
+                                    <!-- progress-bar -->
+                                    <div class="progress-bar">
+                                        <span class="progress primary" style="width: 30%;"></span>
+                                    </div>
+                                    <p class="text-primary">30%</p>
+                                </div>
+
+
+                            </td>
+                            <td class="td-col">
+                                <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                    <div class="dotes-icon">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- tr under tasks  -->
+                        <tr class="under-tasks-table-row">
+                            <td class="td-col" colspan="8">
+
+                                <div class="under-tasks-area animate__animated animate__pulse">
+
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+                        </tr>
+                        <!-- tr  -->
+                        <tr>
+
+                            <td class="td-col">
+                                <div class="reloading-icon">
+                                    <img src="../icons/reloading.svg" alt="">
+                                </div>
+                            </td>
+                            <td class="td-col">
+                                <div class="table-task-details">
+                                    <h5>Préparation TVA Mensuelle</h5>
+                                    <p class="text-primary">JUIN 2020</p>
+
+                                    <div class="task-infos">
+
+                                        <!-- users-attatched -->
+                                        <div class="users-attatched">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <img src="../library/avatars/user.png" alt="">
+                                        </div>
+
+                                        <div class="chat-notification">
+                                            <div class="message-alert has-message">
+                                                <img src="../icons/message.svg" alt="">
+                                            </div>
+                                            <small>6</small>
+                                        </div>
+
+                                        <div class="attatchments-box">
+                                            <img src="../icons/attachment.svg" alt="">
+                                            <small>3</small>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                    <option>British Air Lines</option>
+                                </select>
+                            </td>
+                            <td class="td-col">
+                                <select class="selectpicker ui-select ui-select-light ui-select-xl" name="" id="">
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                    <option>Famille</option>
+                                </select>
+                            </td>
+                            <td class="td-col">
+                                <p class="date-display">
+                                    10/07/2017
+                                </p>
+                                <button class="ui-button-toggle btn-md danger mt-3">
+                                    EN RETARD
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="td-col">
+                                <button class="ui-button-toggle btn-md danger  under-tasks-toggle">
+                                    EN COURS 
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="td-col">
+                                <div class="task-progress">
+                                    <!-- progress-bar -->
+                                    <div class="progress-bar">
+                                        <span class="progress purple" style="width: 30%;"></span>
+                                    </div>
+                                    <p class="text-purple">30%</p>
+                                </div>
+
+
+                            </td>
+                            <td class="td-col">
+                                <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                    <div class="dotes-icon">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- tr under tasks  -->
+                        <tr class="under-tasks-table-row">
+                            <td class="td-col" colspan="8">
+
+                                <div class="under-tasks-area animate__animated animate__pulse">
+
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="under-task-item row">
+
+                                        <div class="col-6">
+                                            <div class="utasks-details">
+                                                <div class="utask-status">
+                                                    <img src="../icons/on-progress.svg" alt="">
+                                                </div>
+                                                <a href="" class="ui-star">
+                                                    <img src="../icons/star.svg" alt="">
+                                                </a>
+                                                <h5>Préparation TVA Mensuelle</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="row">
+
+                                                <div class="col-4">
+                                                    <div class="utasks-collaborateus">
+                                                        <!-- users-attatched -->
+                                                        <div class="users-attatched mt-0">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <img src="../library/avatars/user.png" alt="">
+                                                            <span class="more-attatched">+4</span>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4">
+
+                                                    <div class="utasks-notifications">
+                                                        <div class="chat-notification">
+                                                            <div class="message-alert">
+                                                                <img src="../icons/message.svg" alt="">
+                                                            </div>
+                                                            <small>6</small>
+                                                        </div>
+
+                                                        <div class="attatchments-box">
+                                                            <img src="../icons/attachment.svg" alt="">
+                                                            <small>3</small>
+                                                        </div>
+                                                        <a href="" class="ui-plus">+</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <button class="ui-button-more-options validate-tasks-popover-btn" data-placement="bottom" data-toggle="popover" data-trigger="click" tabindex="0">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+        <!-- table section  -->
+
+        <!-- Content for Popover validate tsks -->
+        <div id="validateTasksPopover" class="d-none">
+            <div class="popover-body">
+                <div class="validate-tasks-popover-body">
+                    <a href="" class="text-primary underline-link mr-3">Sous-tâches</a>
+                    <button class="ui-button-primary-light">
+                        Valider tout
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- End app root  -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../packages/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="../packages/bootstrap/js/popper.min.js"></script>
+    <script src="../packages/bootstrap/js/bootstrap.min.js"></script>
+    <!-- dateTimepeaker scripts  -->
+    <script src="../packages/moment/moment-with-locales.js"></script>
+    <script src="../packages/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <!-- End dateTimepeaker scripts  -->
+    <!-- bootstrap-select  -->
+    <script src="../packages/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <!-- end bootstrap-select  -->
+    <!-- main script (principale app script)  -->
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>
