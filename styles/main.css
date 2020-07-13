@@ -1046,6 +1046,7 @@ ul.tm-menu-items li {
     display: flex;
     align-items: center;
     height: 50px;
+    position: relative;
 }
 
 .setting-table .setting-col p {
