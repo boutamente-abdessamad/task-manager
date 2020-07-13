@@ -510,6 +510,27 @@ ul.tm-menu-items li {
 }
 
 
+/* setting dropdown */
+
+.setting-dropdown .dropdown-item:focus,
+.setting-dropdown .dropdown-item:hover {
+    background-color: var(--main-primary-bg);
+    color: var(--main-primary-color);
+}
+
+.setting-dropdown .dropdown-item {
+    font-family: Roboto-Medium;
+    font-size: 14px;
+    padding: 7px 20px;
+}
+
+
+/* .setting-dropdown {
+    left: unset !important;
+    right: 0 !important;
+} */
+
+
 /* end header  */
 
 
@@ -1006,6 +1027,41 @@ ul.tm-menu-items li {
 
 .ui-table .td-col {
     padding: 25px 25px;
+}
+
+
+/* setting-table  */
+
+.setting-table {
+    background-color: #FFFFFFFF;
+}
+
+.setting-table.table td,
+.setting-table.table th {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.setting-table .setting-col {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.setting-table .setting-col p {
+    color: #242426;
+    font-size: 16px;
+    font-family: Roboto-Medium;
+}
+
+.setting-table .setting-col h3 {
+    color: #000000;
+    font-size: 15px;
+    font-family: Roboto-Bold;
+}
+
+.setting-table .setting-col img {
+    margin-right: 15px;
 }
 
 
@@ -1650,6 +1706,13 @@ ul.tm-menu-items li {
     font-family: Roboto-Medium;
 }
 
+.page-treeview {
+    font-size: 18px;
+    color: #707070;
+    margin-bottom: 0;
+    font-family: Roboto-Medium;
+}
+
 
 /* End page-head-area  */
 
@@ -2032,4 +2095,34 @@ ul.tm-menu-items li {
 
 .checklist-date-limit-btn {
     display: none;
+}
+
+
+/* tabs swetcher  */
+
+.nav-tabs .nav-link {
+    color: #FFFFFF;
+    opacity: .3;
+    font-family: Roboto-Medium;
+    display: flex;
+    background-color: transparent;
+    width: 241px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    opacity: 1;
+    color: #000000;
+    font-family: Roboto-Medium;
+    display: flex;
+    background-color: #fff;
+    width: 241px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
 }

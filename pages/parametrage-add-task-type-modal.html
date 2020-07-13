@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Task manager</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../packages/bootstrap/css/bootstrap.min.css">
+    <!-- font-awesom styles  -->
+    <link rel="stylesheet" href="../packages/font-awesome/font-awesome.min.css">
+    <!-- font-awesom styles  -->
+    <!-- dateTimepiker style  -->
+    <link rel="stylesheet" href="../packages/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <!-- dateTimepiker style  -->
+    <!-- bootstrap select  -->
+    <link rel="stylesheet" href="../packages/bootstrap-select/css/bootstrap-select.min.css">
+    <!-- end bootstrap select -->
+    <!-- animate -->
+    <link rel="stylesheet" href="../packages/animate/css/animate.min.css" />
+    <!-- end animate -->
+    <!-- main style (principale app style)  -->
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+
+
+    <!-- start app root  -->
+    <main class="app-root">
+
+
+        <!-- header  -->
+
+        <header class="tm-header">
+
+            <nav>
+
+                <!-- logo  -->
+                <a href="" class="tm-logo">
+                    <img src="../library/logo/Logo.svg" alt="">
+                </a>
+
+                <!-- menu  -->
+                <ul class="tm-menu-items">
+                    <li>
+                        <a href="">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="" class="active">Tâches</a>
+                    </li>
+                </ul>
+
+                <!-- notifications  -->
+
+                <div class="notifications-area">
+
+                    <div class="notification-box">
+
+                        <div class="notification-bell-card">
+                            <a href="" class="notification-bell-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="bell-icon" src="../icons/bell.svg" alt="">
+                                <span class="notification-alert">1</span>
+                            </a>
+                            <div class="dropdown-menu">
+
+                                <div class="notification-items">
+                                    <div class="notification-item">
+                                        <div class="notification-icon">
+                                            <img src="../icons/time-red.svg" alt="">
+                                        </div>
+                                        <div class="notification-details">
+                                            <h2>La tâche 132 arrive à échéance aujourd’hui à 16h45</h2>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="notification-icon">
+                                            <img src="../icons/time-red.svg" alt="">
+                                        </div>
+                                        <div class="notification-details">
+                                            <h2>La tâche 132 arrive à échéance aujourd’hui à 16h45</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="notification-box">
+
+                        <div class="notification-user-card">
+                            <a href="" class="notification-user-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="user-icon" src="../library/avatars/user.png" alt="">
+                            </a>
+                            <div class="dropdown-menu">
+
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <!-- header  -->
+
+        <!-- page title  -->
+        <section class="page-head-area">
+
+            <div class="container-fluid">
+
+                <div class="page-head-box">
+                    <div class="page-title-box">
+                        <h2 class="page-title">Référentiel</h2>
+                        <h2 class="page-treeview">Paramètrage > Référentiel</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- end page title  -->
+
+
+        <!-- table section  -->
+        <section class="setting-section">
+
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="col-12">
+
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tasks-type-tab" data-toggle="tab" href="#tasks-type" role="tab" aria-controls="tasks-type" aria-selected="true">TYPE DE TÂCHES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="state-tab" data-toggle="tab" href="#state" role="tab" aria-controls="state" aria-selected="false">ETAT DE TRAITEMENT</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <!-- ==================== -->
+                            <!--  TYPE DE TÂCHES tab  -->
+                            <!-- ==================== -->
+                            <div class="tab-pane fade show active" id="tasks-type" role="tabpanel" aria-labelledby="tasks-type-tab">
+
+
+                                <table class="table setting-table shadow animate__animated animate__pulse">
+                                    <tbody>
+
+                                        <!-- tr -->
+                                        <tr>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/date-primary.svg" alt="">
+                                                    <p>Comptabilité</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <h3>Tâches de la comptabilité</h3>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/time-warning.svg" alt="">
+                                                    <p class="text-warning">3 jours</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <button class="ui-button-more-options setting-more-options" id="dropdownSettingButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="dropdown-menu setting-dropdown mt-3 mr-5" aria-labelledby="dropdownSettingButton">
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/edit.svg" alt=""> Editer
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/delate-default.svg" alt=""> Supprimer</a>
+                                                        <a class="dropdown-item" href="#"> <img src="../icons/visibility.svg" alt=""> Cacher</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- tr -->
+                                        <tr>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/date-primary.svg" alt="">
+                                                    <p>Comptabilité</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <h3>Tâches de la comptabilité</h3>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/time-warning.svg" alt="">
+                                                    <p class="text-warning">3 jours</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <button class="ui-button-more-options setting-more-options" id="dropdownSettingButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="dropdown-menu setting-dropdown mt-3 mr-5" aria-labelledby="dropdownSettingButton">
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/edit.svg" alt=""> Editer
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/delate-default.svg" alt=""> Supprimer</a>
+                                                        <a class="dropdown-item" href="#"> <img src="../icons/visibility.svg" alt=""> Cacher</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- tr -->
+                                        <tr>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/date-primary.svg" alt="">
+                                                    <p>Comptabilité</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <h3>Tâches de la comptabilité</h3>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/time-warning.svg" alt="">
+                                                    <p class="text-warning">3 jours</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <button class="ui-button-more-options setting-more-options" id="dropdownSettingButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="dropdown-menu setting-dropdown mt-3 mr-5" aria-labelledby="dropdownSettingButton">
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/edit.svg" alt=""> Editer
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/delate-default.svg" alt=""> Supprimer</a>
+                                                        <a class="dropdown-item" href="#"> <img src="../icons/visibility.svg" alt=""> Cacher</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- tr -->
+                                        <tr>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/date-primary.svg" alt="">
+                                                    <p>Comptabilité</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <h3>Tâches de la comptabilité</h3>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/time-warning.svg" alt="">
+                                                    <p class="text-warning">3 jours</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <button class="ui-button-more-options setting-more-options" id="dropdownSettingButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="dropdown-menu setting-dropdown mt-3 mr-5" aria-labelledby="dropdownSettingButton">
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/edit.svg" alt=""> Editer
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/delate-default.svg" alt=""> Supprimer</a>
+                                                        <a class="dropdown-item" href="#"> <img src="../icons/visibility.svg" alt=""> Cacher</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- tr -->
+                                        <tr>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/date-primary.svg" alt="">
+                                                    <p>Comptabilité</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <h3>Tâches de la comptabilité</h3>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/time-warning.svg" alt="">
+                                                    <p class="text-warning">3 jours</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <button class="ui-button-more-options setting-more-options" id="dropdownSettingButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="dropdown-menu setting-dropdown mt-3 mr-5" aria-labelledby="dropdownSettingButton">
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/edit.svg" alt=""> Editer
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/delate-default.svg" alt=""> Supprimer</a>
+                                                        <a class="dropdown-item" href="#"> <img src="../icons/visibility.svg" alt=""> Cacher</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- tr -->
+                                        <tr>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/date-primary.svg" alt="">
+                                                    <p>Comptabilité</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <h3>Tâches de la comptabilité</h3>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/time-warning.svg" alt="">
+                                                    <p class="text-warning">3 jours</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <button class="ui-button-more-options setting-more-options" id="dropdownSettingButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="dropdown-menu setting-dropdown mt-3 mr-5" aria-labelledby="dropdownSettingButton">
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/edit.svg" alt=""> Editer
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/delate-default.svg" alt=""> Supprimer</a>
+                                                        <a class="dropdown-item" href="#"> <img src="../icons/visibility.svg" alt=""> Cacher</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- tr -->
+                                        <tr>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/date-primary.svg" alt="">
+                                                    <p>Comptabilité</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <h3>Tâches de la comptabilité</h3>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/time-warning.svg" alt="">
+                                                    <p class="text-warning">3 jours</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <button class="ui-button-more-options setting-more-options" id="dropdownSettingButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="dropdown-menu setting-dropdown mt-3 mr-5" aria-labelledby="dropdownSettingButton">
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/edit.svg" alt=""> Editer
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/delate-default.svg" alt=""> Supprimer</a>
+                                                        <a class="dropdown-item" href="#"> <img src="../icons/visibility.svg" alt=""> Cacher</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+
+                            <!-- =======================-->
+                            <!-- ETAT DE TRAITEMENT tab -->
+                            <!-- ====================== -->
+                            <div class="tab-pane fade" id="state" role="tabpanel" aria-labelledby="state-tab">
+
+
+                                <table class="table setting-table shadow animate__animated animate__pulse">
+                                    <tbody>
+
+                                        <!-- tr -->
+                                        <tr>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <p>Nouvelle</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/state-new.svg" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <i class="fa fa-circle validation-client" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <button class="ui-button-more-options setting-more-options" id="dropdownSettingButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="dropdown-menu setting-dropdown mt-3 mr-5" aria-labelledby="dropdownSettingButton2">
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/edit.svg" alt=""> Editer
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/delate-default.svg" alt=""> Supprimer</a>
+                                                        <a class="dropdown-item" href="#"> <img src="../icons/visibility.svg" alt=""> Cacher</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- tr -->
+                                        <tr>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <p>En cours</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/state-inprogress.svg" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <i class="fa fa-circle en-cours " aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <button class="ui-button-more-options setting-more-options" id="dropdownSettingButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="dropdown-menu setting-dropdown mt-3 mr-5" aria-labelledby="dropdownSettingButton2">
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/edit.svg" alt=""> Editer
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/delate-default.svg" alt=""> Supprimer</a>
+                                                        <a class="dropdown-item" href="#"> <img src="../icons/visibility.svg" alt=""> Cacher</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- tr -->
+                                        <tr>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <p>Suspendue</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/state-refused.svg" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <i class="fa fa-circle suspendue" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <button class="ui-button-more-options setting-more-options" id="dropdownSettingButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="dropdown-menu setting-dropdown mt-3 mr-5" aria-labelledby="dropdownSettingButton2">
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/edit.svg" alt=""> Editer
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/delate-default.svg" alt=""> Supprimer</a>
+                                                        <a class="dropdown-item" href="#"> <img src="../icons/visibility.svg" alt=""> Cacher</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- tr -->
+                                        <tr>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <p>Nouvelle</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/state-new.svg" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <i class="fa fa-circle validation-client" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <button class="ui-button-more-options setting-more-options" id="dropdownSettingButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="dropdown-menu setting-dropdown mt-3 mr-5" aria-labelledby="dropdownSettingButton2">
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/edit.svg" alt=""> Editer
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/delate-default.svg" alt=""> Supprimer</a>
+                                                        <a class="dropdown-item" href="#"> <img src="../icons/visibility.svg" alt=""> Cacher</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- tr -->
+                                        <tr>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <p>En cours</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/state-inprogress.svg" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <i class="fa fa-circle en-cours " aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <button class="ui-button-more-options setting-more-options" id="dropdownSettingButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="dropdown-menu setting-dropdown mt-3 mr-5" aria-labelledby="dropdownSettingButton2">
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/edit.svg" alt=""> Editer
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/delate-default.svg" alt=""> Supprimer</a>
+                                                        <a class="dropdown-item" href="#"> <img src="../icons/visibility.svg" alt=""> Cacher</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- tr -->
+                                        <tr>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <p>Suspendue</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <img src="../icons/state-refused.svg" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <i class="fa fa-circle suspendue" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="setting-col">
+                                                    <button class="ui-button-more-options setting-more-options" id="dropdownSettingButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="dotes-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="dropdown-menu setting-dropdown mt-3 mr-5" aria-labelledby="dropdownSettingButton2">
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/edit.svg" alt=""> Editer
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <img src="../icons/delate-default.svg" alt=""> Supprimer</a>
+                                                        <a class="dropdown-item" href="#"> <img src="../icons/visibility.svg" alt=""> Cacher</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- table section  -->
+        <!--==================================================-->
+        <!--=================== Modals  ======================-->
+        <!--==================================================-->
+        <!-- note  -->
+        <!-- to user modal in button add this code to your button in remove auto show in main.js -->
+        <!-- data-toggle="modal" data-target="#settingAddTaskTypeModal" -->
+        <!-- add Collaborateurs -->
+        <div class="modal fade" id="settingAddTaskTypeModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> <img src="../icons/reloading.svg" class="ml-1" alt=""> Ajouter un type de tâches :</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="../icons/close.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form action="">
+
+                            <div class="row">
+
+                                <div class="col-3">
+                                    <div class="form-group">
+
+                                        <label for="">Type de tâches</label>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="form-group">
+                                        <input type="text" name="" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-3">
+                                    <div class="form-group">
+
+                                        <label for="">Type parent</label>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="form-group">
+                                        <select class="selectpicker ui-select ui-select-default w-100 ui-select-xl" name="" id="">
+                                            <option>Aucun</option>
+                                            <option>Aucun</option>
+                                            <option>Aucun</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="">Description</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="" rows="3" placeholder="Ecrivez ici une description de votre tâche …"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-3">
+                                    <div class="form-group">
+
+                                        <label for="">Durée de traitement</label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <input type="number" value="5" name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <select class="selectpicker ui-select ui-select-default w-100 ui-select-xl" name="" id="">
+                                            <option>Heure</option>
+                                            <option>00:00</option>
+                                            <option>00:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-end">
+
+                                <div class="col-9">
+                                    <div class="form-group">
+                                        <input type="submit" name="" value="Ajouter le type de la  tâche" class="form-control ui-button-primiry">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- End app root  -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../packages/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="../packages/bootstrap/js/popper.min.js"></script>
+    <script src="../packages/bootstrap/js/bootstrap.min.js"></script>
+    <!-- dateTimepeaker scripts  -->
+    <script src="../packages/moment/moment-with-locales.js"></script>
+    <script src="../packages/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <!-- End dateTimepeaker scripts  -->
+    <!-- bootstrap-select  -->
+    <script src="../packages/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <!-- end bootstrap-select  -->
+    <!-- main script (principale app script)  -->
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>

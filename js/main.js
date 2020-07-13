@@ -115,6 +115,10 @@ $(document).ready(function() {
         $('#addFilter').modal('show');
         //checklist
         $('#showChecklist').modal('show');
+        // add task type 
+        $('#settingAddTaskTypeModal').modal('show');
+        // add traitement
+        $('#settingTraitementModal').modal('show');
         /*=============== End Auto show modals ==============*/
 
         /*================= End intialisation plugins  ========================*/
@@ -155,6 +159,25 @@ $(document).ready(function() {
             e.preventDefault();
             $('.add-collaborateurs-panel').removeClass('fade-in');
         })
+
+        // settings 
+        $('.setting-more-options').on('click', function(e) {
+            e.preventDefault();
+
+            $('.dotes-icon').not($(this).find('.dotes-icon')).removeClass('toggled');
+            if ($(this).find('.dotes-icon').hasClass('toggled')) {
+                $(this).find('.dotes-icon').removeClass('toggled');
+            } else {
+                $(this).find('.dotes-icon').addClass('toggled');
+            }
+        })
+        $(document).on('click', function(e) {
+            e.preventDefault();
+            if ($(this).find('.dotes-icon').hasClass('toggled')) {
+                $('.dotes-icon').removeClass('toggled');
+            }
+        })
+
 
         /*================= End Events ========================*/
     } catch {
