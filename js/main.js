@@ -34,12 +34,33 @@ $(document).ready(function() {
             $('.setdate-limit').datetimepicker({
                 inline: true,
                 sideBySide: true,
+                icons: {
+                    next: 'fa fa-angle-right',
+                    previous: 'fa fa-angle-left'
+                },
                 format: 'DD/MM/YYYY'
             });
             $('.setdate-limit').on('dp.change', function(e) {
                 btn.find('span').text(e.date.format('DD/MM/YYYY'))
             })
+
         }
+        $('.setdate-limit-checklist').datetimepicker({
+            inline: true,
+            sideBySide: true,
+            icons: {
+                next: 'fa fa-angle-right',
+                previous: 'fa fa-angle-left'
+            },
+            format: 'DD/MM/YYYY'
+        });
+        $('#submitDateLimit').on('click', function(e) {
+            e.preventDefault();
+            let date = $('.setdate-limit-checklist').data('date');
+            $('#setLimitModal').modal('hide');
+            $('.checklist-date-limit-btn span').text(date);
+            $('.checklist-date-limit-btn').show();
+        })
         $(".set-date-limit-btn").popover({
             html: true,
             content: function() {
@@ -56,7 +77,11 @@ $(document).ready(function() {
         })
 
         $('.init-datetimepicker').datetimepicker({
-            format: 'DD/MM/YYYY'
+            format: 'DD/MM/YYYY',
+            icons: {
+                next: 'fa fa-angle-right',
+                previous: 'fa fa-angle-left'
+            }
         });
 
 
@@ -69,8 +94,28 @@ $(document).ready(function() {
             }
         })
 
+        // checklist
+        if ($('.checklist-checkbox').is(":checked")) {
+            $(this).closest('.checklist-item').addClass('done');
+        }
+        $('.checklist-checkbox').on('change', function(e) {
+            if ($(this).is(":checked")) {
+                $(this).closest('.checklist-item').addClass('done');
+            } else {
+                $(this).closest('.checklist-item').removeClass('done');
+            }
+        })
+        $('.ui-accordion-head').on('click', function(e) {
+            e.preventDefault();
+            $(this).closest('.ui-accordion').find('.ui-accordion-body').toggleClass('in');
+        })
+
+        /*=============== Auto show modals ==============*/
         // show filter modal in load 
         $('#addFilter').modal('show');
+        //checklist
+        $('#showChecklist').modal('show');
+        /*=============== End Auto show modals ==============*/
 
         /*================= End intialisation plugins  ========================*/
 
