@@ -1922,383 +1922,313 @@
                 </div>
             </div>
         </div>
-        <!--==================================================-->
-        <!--=================== Modals  ======================-->
-        <!--==================================================-->
 
+    </main>
+    <!-- table section  -->
+    <!--==================================================-->
+    <!--=================== Modals  ======================-->
+    <!--==================================================-->
+    <!-- note  -->
+    <!-- to user modal in button add this code to your button in remove auto show in main.js -->
+    <!-- data-toggle="modal" data-target="#addNewTaskRecurrent" -->
+    <!-- add Collaborateurs -->
+    <div class="modal fade" id="addNewTaskRecurrent" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> <img src="../icons/reloading.svg" class="ml-1" alt=""> Nouvelle tâche récurrente</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="../icons/close.svg" alt="">
+                        </button>
+                </div>
+                <div class="modal-body">
 
+                    <form action="">
+                        <div class="row">
 
-        <!--==================================================-->
-        <!--============= checklist modal  =================-->
-        <!--==================================================-->
+                            <div class="col-8">
 
-        <!-- note  -->
-        <!-- to user modal in button add this code to your button in remove auto show in main.js -->
-        <!-- data-toggle="modal" data-target="#showChecklist" -->
+                                <div class="row align-items-center">
 
-        <div class="modal fade" id="showChecklist" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
+                                    <div class="col-4">
+                                        <div class="form-group">
 
-                        <div class="checklist-zone">
-
-                            <div class="row">
-
-                                <div class="col-8">
-
-                                    <div class="checklist-head">
-
-                                        <img src="../icons/reloading.svg" alt="">
-                                        <img src="../icons/star.svg" alt="">
-
-                                        <h2 class="checklist-title">Préparation TVA Mensuelle</h2>
-
-                                    </div>
-                                    <div class="checklist-details">
-                                        <h3 class="checklist-undertitle">BRITISH SCHOOL</h3>
-
-                                        <div class="checklist-tags">
-                                            <button class="ui-button-primiry">Comptabilité</button>
-                                            <button class="ui-button-primary-light btn-lg w-50 ml-2 checklist-date-limit-btn">
-                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                                <span>17/05/2020</span>
-                                                <img src="../icons/time-blue.svg" alt="">
-                                            </button>
-
-                                        </div>
-                                        <div class="checklist-desc">
-                                            <p>Your first INTERVIEW may be bad but your 20th will be great. Your first LinkedIn post may be bad, but your 100th will be great. </p>
-                                        </div>
-                                        <div class="checklist-users-attatched">
-                                            <!-- users-attatched -->
-                                            <div class="users-attatched mt-0">
-                                                <img src="../library/avatars/user.png" alt="">
-                                                <img src="../library/avatars/user.png" alt="">
-                                                <img src="../library/avatars/user.png" alt="">
-                                                <span class="more-attatched">+4</span>
-                                            </div>
-                                            <a href="" class="ui-plus">+</a>
+                                            <label for="">Titre de la tâche</label>
                                         </div>
                                     </div>
-
-
-
-
+                                    <div class="col-8">
+                                        <div class="form-group">
+                                            <input type="text" name="" class="form-control" placeholder="Clôture mensuelle">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-4">
-                                    <select class="selectpicker ui-select ui-select-default w-100" name="">
-                                        <option data-icon="fa fa-circle planifiee">Planifiée</option>
-                                        <option data-icon="fa fa-circle en-cours">En cours</option>
-                                        <option data-icon="fa fa-circle suspendue">Suspendue</option>
-                                        <option data-icon="fa fa-circle approbation-interne">Approbation interne</option>
-                                        <option data-icon="fa fa-circle en-attente-client">En attente client</option>
-                                        <option data-icon="fa fa-circle validation-client">Validation client</option>
-                                        <option data-icon="fa fa-circle cloturee">Clôturée</option>
-                                    </select>
+                                <div class="row align-items-center">
 
-                                    <button class="ui-button-primary-light w-100 btn-lg mt-2" data-toggle="modal" data-target="#setLimitModal">
-                                       <img src="../icons/time-blue.svg" alt="">
-                                        Date limite
-                                    </button>
-                                    <button class="ui-button-primary-light w-100 btn-lg mt-2">
-                                        <img src="../icons/duplacate.svg" alt="">
-                                        Dupliquer
-                                    </button>
+                                    <div class="col-4">
+                                        <div class="form-group">
 
+                                            <label for="">Famille de la tâche</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="form-group">
+                                            <select class="selectpicker ui-select ui-select-default w-100 ui-select-xl" name="">
+                                                    <option>Comptabilité</option>
+                                                    <option>Comptabilité</option>
+                                                    <option>Comptabilité</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+
+                                    <div class="col-4">
+                                        <div class="form-group">
+                                            <label for="">Périodicité</label>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="form-group">
+                                            <label for="">Répéter tou(te)s les :</label>
+                                            <select class="selectpicker ui-select ui-select-default w-100 ui-select-xl deadline-select" name="">
+                                                <option data-target="deadline-by-days">Semaine</option>
+                                                <option data-target="deadline-by-month">Mois</option>
+                                                <option data-target="deadline-by-quarterly">Trimestriel</option>
+                                            </select>
+                                            <label for="">Deadline </label>
+
+                                            <div class="deadline-by-days active">
+
+                                                <a href="" class="deadline-day">
+                                                    L
+                                                </a>
+                                                <a href="" class="deadline-day active">
+                                                    M
+                                                </a>
+                                                <a href="" class="deadline-day">
+                                                    M
+                                                </a>
+                                                <a href="" class="deadline-day">
+                                                    J
+                                                </a>
+                                                <a href="" class="deadline-day">
+                                                    V
+                                                </a>
+                                                <a href="" class="deadline-day">
+                                                    S
+                                                </a>
+                                                <a href="" class="deadline-day">
+                                                    D
+                                                </a>
+
+                                            </div>
+
+                                            <div class="deadline-by-month">
+                                                <label>Deadline</label>
+                                                <select class="selectpicker ui-select ui-select-default  ui-select-xl mr-2" name="">
+                                                    <option>Jour</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                                <select class="selectpicker ui-select ui-select-default ui-select-xl" name="">
+                                                    <option>Mois actuel</option>
+                                                    <option>Mois actuel</option>
+                                                    <option>Mois actuel</option>
+                                                </select>
+
+                                            </div>
+                                            <div class="deadline-by-quarterly">
+                                                <label>Deadline</label>
+                                                <select class="selectpicker ui-select ui-select-default  ui-select-xl mr-2" name="">
+                                                    <option>Jour</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                                <select class="selectpicker ui-select ui-select-default ui-select-xl" name="">
+                                                    <option>Mois actuel</option>
+                                                    <option>Mois actuel</option>
+                                                    <option>Mois actuel</option>
+                                                </select>
+                                                <select class="selectpicker ui-select ui-select-default ui-select-xl mt-3" name="">
+                                                    <option>Année en cours</option>
+                                                    <option>Année en cours</option>
+                                                    <option>Année en cours</option>
+                                                </select>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="">Affectés par défaut à :</label>
+                                            <div class="utasks-collaborateus">
+                                                <!-- users-attatched -->
+                                                <div class="users-attatched mt-0">
+                                                    <img src="../library/avatars/user.png" alt="">
+                                                    <img src="../library/avatars/user.png" alt="">
+                                                    <span class="more-attatched">+4</span>
+                                                </div>
+                                                <div class="w-75 show-collaborateurs-panel">
+                                                    <a href="" class="ui-plus">+</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-3">
+
+                                    <div class="col-12">
+                                        <div class="ui-accordion shadow">
+
+                                            <div class="ui-accordion-head">
+                                                <div class="ui-accordion-head-title">
+                                                    <i class="fa fa-angle-down mr-2" aria-hidden="true"></i>
+                                                    <h2>Sous-tâche par défaut</h2>
+                                                </div>
+                                                <button class="ui-button-primiry btn-md">+  Nouvelle sous-tâche</button>
+                                            </div>
+
+                                            <div class="ui-accordion-body">
+
+
+                                                <div class="checklist-items">
+
+                                                    <!-- item -->
+                                                    <div class="checklist-item">
+                                                        <div class="ui-checkbox">
+                                                            <label>
+                                                                   <input type="checkbox" name="" >
+                                                                    <span class="label-display"></span>
+                                                                </label>
+                                                        </div>
+                                                        <h3 class="checklist-item-title">Vérification des documents du dossier (numéros, montants & tiers)</h3>
+                                                    </div>
+                                                    <!-- item -->
+                                                    <div class="checklist-item">
+                                                        <div class="ui-checkbox">
+                                                            <label>
+                                                                    <input type="checkbox" name="check" >  
+                                                                    <span class="label-display"></span>
+                                                                </label>
+                                                        </div>
+                                                        <h3 class="checklist-item-title">Vérification des documents du dossier (numéros, montants & tiers)</h3>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
 
-                            <div class="row mt-5">
-                                <div class="col-12">
+                            <div class="col-4 text-right">
+                                <button class="ui-button-primary-light w-75 btn-lg mb-3">
+                                    <img src="../icons/duplacate.svg" alt="">
+                                    Dupliquer
+                                </button>
+                                <button class="ui-button-primary-light w-75 btn-lg">
+                                    <img src="../icons/visibility-primary.svg" alt="">
+                                    Consulter
+                                </button>
 
-                                    <div class="ui-accordion shadow">
+                            </div>
 
-                                        <div class="ui-accordion-head">
-                                            <div class="ui-accordion-head-title">
-                                                <h2>Checklist (2/4)</h2>
-                                            </div>
-                                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                                        </div>
+                        </div>
+                        <div class="row">
 
-                                        <div class="ui-accordion-body">
-
-                                            <div class="task-progress">
-                                                <!-- progress-bar -->
-                                                <div class="progress-bar">
-                                                    <span class="progress purple" style="width: 30%;"></span>
-                                                </div>
-                                                <p class="text-purple">30%</p>
-                                            </div>
-
-                                            <div class="checklist-items">
-                                                <!-- item -->
-                                                <div class="checklist-item">
-                                                    <div class="ui-checkbox">
-                                                        <label>
-                                                            <input type="checkbox" name="check" class="checklist-checkbox">  
-                                                            <span class="label-display"></span>
-                                                        </label>
-                                                    </div>
-                                                    <img class="ui-star-icon" src="../icons/star.svg" alt="">
-                                                    <h3 class="checklist-item-title">Vérification des documents du dossier (numéros, montants & tiers)</h3>
-                                                    <img src="../library/avatars/user.png" alt="" class="avatar shadow">
-                                                </div>
-                                                <!-- item -->
-                                                <div class="checklist-item">
-                                                    <div class="ui-checkbox">
-                                                        <label>
-                                                            <input type="checkbox" name="check" class="checklist-checkbox">  
-                                                            <span class="label-display"></span>
-                                                        </label>
-                                                    </div>
-                                                    <img class="ui-star-icon" src="../icons/star.svg" alt="">
-                                                    <h3 class="checklist-item-title">Vérification des documents du dossier (numéros, montants & tiers)</h3>
-                                                    <img src="../library/avatars/user.png" alt="" class="avatar shadow">
-                                                </div>
-                                                <!-- item -->
-                                                <div class="checklist-item">
-                                                    <div class="ui-checkbox">
-                                                        <label>
-                                                            <input type="checkbox" name="check" class="checklist-checkbox">  
-                                                            <span class="label-display"></span>
-                                                        </label>
-                                                    </div>
-                                                    <img class="ui-star-icon" src="../icons/star.svg" alt="">
-                                                    <h3 class="checklist-item-title">Vérification des documents du dossier (numéros, montants & tiers)</h3>
-                                                    <img src="../library/avatars/user.png" alt="" class="avatar shadow">
-                                                </div>
-                                                <!-- item -->
-                                                <div class="checklist-item done">
-                                                    <div class="ui-checkbox">
-                                                        <label>
-                                                            <input type="checkbox" name="check" checked  class="checklist-checkbox">  
-                                                            <span class="label-display"></span>
-                                                        </label>
-                                                    </div>
-                                                    <img class="ui-star-icon" src="../icons/star.svg" alt="">
-                                                    <h3 class="checklist-item-title">Vérification des documents du dossier (numéros, montants & tiers)</h3>
-                                                    <img src="../library/avatars/user.png" alt="" class="avatar shadow">
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="col-12 mt-3">
-
-                                    <div class="ui-accordion shadow chicklist-dox-accordion">
-
-                                        <div class="ui-accordion-head">
-                                            <div class="ui-accordion-head-title">
-                                                <img src="../icons/attachment.svg" alt="">
-                                                <h2>3 Fichiers joints</h2>
-                                            </div>
-                                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                                        </div>
-
-                                        <div class="ui-accordion-body">
-
-
-                                            <div class="chicklist-docs">
-
-                                                <div class="chicklist-doc">
-
-                                                    <div class="chicklist-doc-details">
-                                                        <img src="../icons/doc.svg" alt="">
-                                                        <div class="chicklist-doc-info">
-                                                            <h3>Titre du fichier faux texte</h3>
-                                                            <p class="text-default">Ajouté il y’a 30 minutes</p>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="" class="circle-delate-btn">
-                                                        <img src="../icons/delete-button.svg" alt="">
-                                                    </a>
-
-                                                </div>
-                                                <div class="chicklist-doc">
-
-                                                    <div class="chicklist-doc-details">
-                                                        <img src="../icons/doc.svg" alt="">
-                                                        <div class="chicklist-doc-info">
-                                                            <h3>Titre du fichier faux texte</h3>
-                                                            <p class="text-default">Ajouté il y’a 30 minutes</p>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="" class="circle-delate-btn">
-                                                        <img src="../icons/delete-button.svg" alt="">
-                                                    </a>
-
-                                                </div>
-                                                <div class="chicklist-doc">
-
-                                                    <div class="chicklist-doc-details">
-                                                        <img src="../icons/doc.svg" alt="">
-                                                        <div class="chicklist-doc-info">
-                                                            <h3>Titre du fichier faux texte</h3>
-                                                            <p class="text-default">Ajouté il y’a 30 minutes</p>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="" class="circle-delate-btn">
-                                                        <img src="../icons/delete-button.svg" alt="">
-                                                    </a>
-
-                                                </div>
-                                                <div class="chicklist-doc">
-
-                                                    <div class="chicklist-doc-details">
-                                                        <img src="../icons/doc.svg" alt="">
-                                                        <div class="chicklist-doc-info">
-                                                            <h3>Titre du fichier faux texte</h3>
-                                                            <p class="text-default">Ajouté il y’a 30 minutes</p>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="" class="circle-delate-btn">
-                                                        <img src="../icons/delete-button.svg" alt="">
-                                                    </a>
-
-                                                </div>
-
-                                            </div>
-
-                                            <div class="no-files">
-                                                <h2 class="text-default">Vous n’avez aucun fichier ajouté <br> actuellement.
-                                                </h2>
-                                                <label for="newFileToChecklist" class="ui-button-primary-light mt-4 w-50 btn-lg">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                    Nouveau fichier</label>
-                                                <input type="file" name="" id="newFileToChecklist" class="d-none">
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="col-12">
-
-                                    <div class="checklist-history">
-
-                                        <h2 class="checklist-history-title">Historique du traitement</h2>
-
-                                        <div class="checklist-history-item">
-                                            <div class="check-history-img">
-                                                <img src="../library/avatars/user.png" alt="" class="avatar">
-                                            </div>
-                                            <div class="check-history-body">
-                                                <div class="form-group">
-                                                    <textarea class="form-control" name="" rows="2" placeholder="Laisser un commentaire"></textarea>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="checklist-history-item">
-                                            <div class="check-history-img">
-                                                <img src="../library/avatars/user.png" alt="" class="avatar">
-                                            </div>
-                                            <div class="check-history-body">
-                                                <div class="comment-date">
-                                                    <p>2 mai 2020 - 09:32</p> <button class="ui-button-primiry btn-md ml-2">Echange</button>
-                                                </div>
-                                                <div class="comment-body">
-                                                    <p>Bonjour, Mr Jamili <br> Merci de nous envoyer la copie de la facture 908/20 d’un montant TTC de 76 000.00.</p>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="checklist-history-item">
-                                            <div class="check-history-img">
-                                                <img src="../library/avatars/user.png" alt="" class="avatar">
-                                            </div>
-                                            <div class="check-history-body">
-                                                <div class="comment-date">
-                                                    <p>2 mai 2020 - 09:32</p>
-                                                </div>
-                                                <div class="comment-body">
-                                                    <p>Bonjour, Mr Jamili <br> Merci de nous envoyer la copie de la facture 908/20 d’un montant TTC de 76 000.00.</p>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="checklist-history-item">
-                                            <div class="check-history-img">
-                                                <img src="../library/avatars/user.png" alt="" class="avatar">
-                                            </div>
-                                            <div class="check-history-body">
-                                                <div class="comment-date">
-                                                    <p>2 mai 2020 - 09:32</p>
-                                                </div>
-                                                <div class="comment-body">
-                                                    <p>Bonjour, Mr Jamili <br> Merci de nous envoyer la copie de la facture 908/20 d’un montant TTC de 76 000.00.</p>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="submit" name="" value="Ajouter la tâche récurrente" class="form-control ui-button-primiry">
                                 </div>
                             </div>
                         </div>
-                    </div>
+
+                    </form>
                 </div>
             </div>
         </div>
-
-        <!-- add Collaborateurs -->
-        <div class="modal fade" id="setLimitModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Date limite</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <img src="../icons/close.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="modal-body">
-
-                        <form action="">
-                            <div class="form-group">
-                                <div class="setdate-limit-checklist"></div>
-                            </div>
-                            <div class="form-group">
-                                <label>Définir un rappel</label>
-                                <select class="selectpicker ui-select ui-select-default w-100 ui-select-xl" name="">
-                                    <option>1 jour avant</option>
-                                    <option>1 jour avant</option>
-                                    <option>1 jour avant</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" value="Enregistrer" class="ui-button-primiry w-100" id="submitDateLimit">
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!--==================================================-->
-        <!--============= Under task modals  =================-->
-        <!--==================================================-->
-    </main>
-
+    </div>
     <!-- End app root  -->
 
-
+    <!--==================================================-->
+    <!--=============== COLLABORATEURS LIST PANEL  =======-->
+    <!--==================================================-->
+    <div class="add-collaborateurs-panel shadow animate__animated animate__fadeInUp">
+        <div class="acp-head">
+            <h2 class="text-default">COLLABORATEURS</h2>
+            <button type="button" class="close close-collaborateurs-panel">
+                    <img src="../icons/close.svg" alt="">
+                </button>
+        </div>
+        <div class="acp-body">
+            <div class="collaborateurs-list">
+                <div class="collaborateur-item">
+                    <div class="form-check">
+                        <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                    </div>
+                </div>
+                <div class="collaborateur-item">
+                    <div class="form-check">
+                        <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                    </div>
+                </div>
+                <div class="collaborateur-item">
+                    <div class="form-check">
+                        <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                    </div>
+                </div>
+                <div class="collaborateur-item">
+                    <div class="form-check">
+                        <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                    </div>
+                </div>
+                <div class="collaborateur-item">
+                    <div class="form-check">
+                        <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="acp-footer">
+            <button class="ui-button-primiry btn-xl w-100">
+                    Ajouter
+                </button>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../packages/jquery/jquery-3.3.1.slim.min.js"></script>

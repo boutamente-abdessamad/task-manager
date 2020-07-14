@@ -119,6 +119,8 @@ $(document).ready(function() {
         $('#settingAddTaskTypeModal').modal('show');
         // add traitement
         $('#settingTraitementModal').modal('show');
+        // Nouvelle tâche récurrente
+        $('#addNewTaskRecurrent').modal('show');
         /*=============== End Auto show modals ==============*/
 
         /*================= End intialisation plugins  ========================*/
@@ -163,20 +165,18 @@ $(document).ready(function() {
         // settings 
         $('.setting-more-options').on('click', function(e) {
             e.preventDefault();
+            $(this).parent().find('.setting-dropdown').toggleClass('show');
+            $(this).find('.dotes-icon').toggleClass('toggled');
+        })
 
-            $('.dotes-icon').not($(this).find('.dotes-icon')).removeClass('toggled');
-            if ($(this).find('.dotes-icon').hasClass('toggled')) {
-                $(this).find('.dotes-icon').removeClass('toggled');
-            } else {
-                $(this).find('.dotes-icon').addClass('toggled');
-            }
+        // deadline 
+
+        $('.deadline-select').on('change', function(e) {
+            let target = $(this).find('option:selected').attr('data-target');
+            $('*[class*="deadline-by"]').removeClass('active');
+            $('.' + target).addClass('active');
         })
-        $(document).on('click', function(e) {
-            e.preventDefault();
-            if ($(this).find('.dotes-icon').hasClass('toggled')) {
-                $('.dotes-icon').removeClass('toggled');
-            }
-        })
+
 
 
         /*================= End Events ========================*/

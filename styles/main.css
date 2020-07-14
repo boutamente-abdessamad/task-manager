@@ -743,6 +743,10 @@ ul.tm-menu-items li {
 .ui-button-approve img {
     height: 10px;
     width: 16px;
+    left: unset;
+    top: unset;
+    transform: unset;
+    position: static;
 }
 
 
@@ -759,6 +763,10 @@ ul.tm-menu-items li {
 .ui-button-refuse img {
     height: 12px;
     width: 12px;
+    left: unset;
+    top: unset;
+    transform: unset;
+    position: static;
 }
 
 
@@ -776,6 +784,10 @@ ul.tm-menu-items li {
 .ui-button-letter img {
     height: 12px;
     width: 18px;
+    left: unset;
+    top: unset;
+    transform: unset;
+    position: static;
 }
 
 .ui-delete {
@@ -2126,4 +2138,82 @@ ul.tm-menu-items li {
     align-items: center;
     justify-content: center;
     height: 70px;
+}
+
+#addNewTaskRecurrent .ui-accordion-head .ui-accordion-head-title h2 {
+    font-size: 13px;
+}
+
+#addNewTaskRecurrent .checklist-item .checklist-item-title {
+    color: #000000;
+    font-size: 10px;
+    width: calc(100% - 30px);
+    font-family: Roboto-Medium;
+}
+
+#addNewTaskRecurrent .ui-accordion-head button {
+    font-size: 13px;
+}
+
+.deadline-by-days {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.deadline-day {
+    background-color: #F4F4F4;
+    width: 38px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    font-size: 13px;
+    font-family: Roboto-Medium;
+    color: #686874;
+}
+
+.deadline-day:hover {
+    background-color: #2FA6F2;
+    color: #FFFFFF;
+}
+
+.deadline-day.active {
+    background-color: #2FA6F2;
+    color: #FFFFFF;
+}
+
+.deadline-by-month,
+.deadline-by-quarterly {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.deadline-by-month label,
+.deadline-by-quarterly label {
+    margin-bottom: 0px;
+    width: 24%;
+}
+
+.deadline-by-month .ui-select:nth-child(2),
+.deadline-by-quarterly .ui-select:nth-child(2) {
+    width: 34% !important;
+}
+
+.deadline-by-month .ui-select:nth-child(3),
+.deadline-by-quarterly .ui-select:nth-child(3) {
+    width: 39% !important;
+}
+
+[class*="deadline-by"] {
+    display: none;
+}
+
+[class*="deadline-by"].active {
+    display: flex;
 }
