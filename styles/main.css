@@ -2217,3 +2217,93 @@ ul.tm-menu-items li {
 [class*="deadline-by"].active {
     display: flex;
 }
+
+
+/* ====================board-area========================= */
+
+.ui-column {
+    background-color: #EBECF0;
+    border-radius: 7px;
+    margin-right: 15px;
+    padding: 22px;
+    width: 340px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.ui-column .ui-column-title {
+    color: #13194B;
+    font-size: 16px;
+    font-family: Roboto-Medium;
+}
+
+.ui-cards {
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.ui-cards .ui-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.ui-card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ui-card-head p {
+    color: #131313;
+    font-size: 15px;
+    font-family: Roboto-Medium;
+}
+
+.ui-card-body {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ui-card-body .ui-date-start {
+    color: #000000;
+    font-family: Roboto-Bold;
+    font-size: 15px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.ui-card-body .ui-date-end {
+    color: #2FA6F2;
+    font-family: Roboto-Medium;
+    font-size: 15px;
+    position: relative;
+    margin-top: 5px;
+    padding-left: 40px;
+}
+
+.ui-card-body .ui-date-end::after {
+    content: "";
+    height: 40px;
+    width: 33px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../icons/start-to-end.svg);
+}
+
+.ui-columns {
+    white-space: nowrap;
+    display: flex;
+    overflow: auto;
+}
+
+
+/* =====================board-area======================== */

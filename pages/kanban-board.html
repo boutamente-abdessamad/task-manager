@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Task manager</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../packages/bootstrap/css/bootstrap.min.css">
+    <!-- font-awesom styles  -->
+    <link rel="stylesheet" href="../packages/font-awesome/font-awesome.min.css">
+    <!-- font-awesom styles  -->
+    <!-- dateTimepiker style  -->
+    <link rel="stylesheet" href="../packages/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <!-- dateTimepiker style  -->
+    <!-- bootstrap select  -->
+    <link rel="stylesheet" href="../packages/bootstrap-select/css/bootstrap-select.min.css">
+    <!-- end bootstrap select -->
+    <!-- animate -->
+    <link rel="stylesheet" href="../packages/animate/css/animate.min.css" />
+    <!-- end animate -->
+    <!-- main style (principale app style)  -->
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+
+
+    <!-- start app root  -->
+    <main class="app-root">
+
+
+        <!-- header  -->
+
+        <header class="tm-header">
+
+            <nav>
+
+                <!-- logo  -->
+                <a href="" class="tm-logo">
+                    <img src="../library/logo/Logo.svg" alt="">
+                </a>
+
+                <!-- menu  -->
+                <ul class="tm-menu-items">
+                    <li>
+                        <a href="">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="" class="active">Tâches</a>
+                    </li>
+                </ul>
+
+                <!-- notifications  -->
+
+                <div class="notifications-area">
+
+                    <div class="notification-box">
+
+                        <div class="notification-bell-card">
+                            <a href="" class="notification-bell-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="bell-icon" src="../icons/bell.svg" alt="">
+                                <span class="notification-alert">1</span>
+                            </a>
+                            <div class="dropdown-menu">
+
+                                <div class="notification-items">
+                                    <div class="notification-item">
+                                        <div class="notification-icon">
+                                            <img src="../icons/time-red.svg" alt="">
+                                        </div>
+                                        <div class="notification-details">
+                                            <h2>La tâche 132 arrive à échéance aujourd’hui à 16h45</h2>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="notification-icon">
+                                            <img src="../icons/time-red.svg" alt="">
+                                        </div>
+                                        <div class="notification-details">
+                                            <h2>La tâche 132 arrive à échéance aujourd’hui à 16h45</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="notification-box">
+
+                        <div class="notification-user-card">
+                            <a href="" class="notification-user-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="user-icon" src="../library/avatars/user.png" alt="">
+                            </a>
+                            <div class="dropdown-menu">
+
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <!-- header  -->
+
+        <!-- page title  -->
+        <section class="page-head-area">
+
+            <div class="container-fluid">
+
+                <div class="page-head-box">
+
+                    <h2 class="page-title">Kanban Board</h2>
+
+                    <div class="page-head-actions">
+
+                        <select class="selectpicker ui-select ui-select-default ui-select-xl mr-2" name="" id="">
+                            <option>Tva mensuelle</option>
+                            <option>Tva mensuelle</option>
+                            <option>Tva mensuelle</option>
+                        </select>
+
+                        <select class="selectpicker ui-select ui-select-default ui-select-xl" name="" id="">
+                            <option>Mai 2020</option>
+                            <option>Mai 2020</option>
+                            <option>Mai 2020</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- end page title  -->
+
+
+        <section class="board-area">
+
+            <div class="container-fluid">
+
+
+                <div class="row">
+
+                    <div class="col-12">
+
+                        <div class="ui-columns">
+                            <!-- column -->
+                            <div class="ui-column">
+
+                                <p class="ui-column-title">Vérifications des pièces</p>
+
+                                <div class="ui-cards shadow">
+                                    <!-- card  -->
+                                    <div class="ui-card">
+                                        <div class="ui-card-head">
+                                            <p>BRITISH AIR LINES</p>
+                                            <img src="../library/avatars/user.png" alt="" class="avatar shadow">
+                                        </div>
+                                        <div class="ui-card-body">
+                                            <p class="ui-date-start">05 Sept 2019</p>
+                                            <p class="ui-date-end">Au 17 Sept 2019</p>
+                                            <div class="chat-notification">
+                                                <div class="message-alert">
+                                                    <img src="../icons/message.svg" alt="">
+                                                </div>
+                                                <small>6</small>
+                                            </div>
+
+                                            <div class="attatchments-box">
+                                                <img src="../icons/attachment.svg" alt="">
+                                                <small>3</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card  -->
+                                    <div class="ui-card">
+                                        <div class="ui-card-head">
+                                            <p>BRITISH AIR LINES</p>
+                                            <img src="../library/avatars/user.png" alt="" class="avatar shadow">
+                                        </div>
+                                        <div class="ui-card-body">
+                                            <p class="ui-date-start">05 Sept 2019</p>
+                                            <p class="ui-date-end">Au 17 Sept 2019</p>
+                                            <div class="chat-notification">
+                                                <div class="message-alert">
+                                                    <img src="../icons/message.svg" alt="">
+                                                </div>
+                                                <small>6</small>
+                                            </div>
+
+                                            <div class="attatchments-box">
+                                                <img src="../icons/attachment.svg" alt="">
+                                                <small>3</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card  -->
+                                    <div class="ui-card">
+                                        <div class="ui-card-head">
+                                            <p>BRITISH AIR LINES</p>
+                                            <img src="../library/avatars/user.png" alt="" class="avatar shadow">
+                                        </div>
+                                        <div class="ui-card-body">
+                                            <p class="ui-date-start">05 Sept 2019</p>
+                                            <p class="ui-date-end">Au 17 Sept 2019</p>
+                                            <div class="chat-notification">
+                                                <div class="message-alert">
+                                                    <img src="../icons/message.svg" alt="">
+                                                </div>
+                                                <small>6</small>
+                                            </div>
+
+                                            <div class="attatchments-box">
+                                                <img src="../icons/attachment.svg" alt="">
+                                                <small>3</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- column -->
+                            <div class="ui-column">
+
+                                <p class="ui-column-title">Vérifications des pièces</p>
+
+                                <div class="ui-cards shadow">
+                                    <!-- card  -->
+                                    <div class="ui-card">
+                                        <div class="ui-card-head">
+                                            <p>BRITISH AIR LINES</p>
+                                            <img src="../library/avatars/user.png" alt="" class="avatar shadow">
+                                        </div>
+                                        <div class="ui-card-body">
+                                            <p class="ui-date-start">05 Sept 2019</p>
+                                            <p class="ui-date-end">Au 17 Sept 2019</p>
+                                            <div class="chat-notification">
+                                                <div class="message-alert">
+                                                    <img src="../icons/message.svg" alt="">
+                                                </div>
+                                                <small>6</small>
+                                            </div>
+
+                                            <div class="attatchments-box">
+                                                <img src="../icons/attachment.svg" alt="">
+                                                <small>3</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card  -->
+                                    <div class="ui-card">
+                                        <div class="ui-card-head">
+                                            <p>BRITISH AIR LINES</p>
+                                            <img src="../library/avatars/user.png" alt="" class="avatar shadow">
+                                        </div>
+                                        <div class="ui-card-body">
+                                            <p class="ui-date-start">05 Sept 2019</p>
+                                            <p class="ui-date-end">Au 17 Sept 2019</p>
+                                            <div class="chat-notification">
+                                                <div class="message-alert">
+                                                    <img src="../icons/message.svg" alt="">
+                                                </div>
+                                                <small>6</small>
+                                            </div>
+
+                                            <div class="attatchments-box">
+                                                <img src="../icons/attachment.svg" alt="">
+                                                <small>3</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card  -->
+                                    <div class="ui-card">
+                                        <div class="ui-card-head">
+                                            <p>BRITISH AIR LINES</p>
+                                            <img src="../library/avatars/user.png" alt="" class="avatar shadow">
+                                        </div>
+                                        <div class="ui-card-body">
+                                            <p class="ui-date-start">05 Sept 2019</p>
+                                            <p class="ui-date-end">Au 17 Sept 2019</p>
+                                            <div class="chat-notification">
+                                                <div class="message-alert">
+                                                    <img src="../icons/message.svg" alt="">
+                                                </div>
+                                                <small>6</small>
+                                            </div>
+
+                                            <div class="attatchments-box">
+                                                <img src="../icons/attachment.svg" alt="">
+                                                <small>3</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- column -->
+                            <div class="ui-column">
+
+                                <p class="ui-column-title">Vérifications des pièces</p>
+
+                                <div class="ui-cards shadow">
+                                    <!-- card  -->
+                                    <div class="ui-card">
+                                        <div class="ui-card-head">
+                                            <p>BRITISH AIR LINES</p>
+                                            <img src="../library/avatars/user.png" alt="" class="avatar shadow">
+                                        </div>
+                                        <div class="ui-card-body">
+                                            <p class="ui-date-start">05 Sept 2019</p>
+                                            <p class="ui-date-end">Au 17 Sept 2019</p>
+                                            <div class="chat-notification">
+                                                <div class="message-alert">
+                                                    <img src="../icons/message.svg" alt="">
+                                                </div>
+                                                <small>6</small>
+                                            </div>
+
+                                            <div class="attatchments-box">
+                                                <img src="../icons/attachment.svg" alt="">
+                                                <small>3</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card  -->
+                                    <div class="ui-card">
+                                        <div class="ui-card-head">
+                                            <p>BRITISH AIR LINES</p>
+                                            <img src="../library/avatars/user.png" alt="" class="avatar shadow">
+                                        </div>
+                                        <div class="ui-card-body">
+                                            <p class="ui-date-start">05 Sept 2019</p>
+                                            <p class="ui-date-end">Au 17 Sept 2019</p>
+                                            <div class="chat-notification">
+                                                <div class="message-alert">
+                                                    <img src="../icons/message.svg" alt="">
+                                                </div>
+                                                <small>6</small>
+                                            </div>
+
+                                            <div class="attatchments-box">
+                                                <img src="../icons/attachment.svg" alt="">
+                                                <small>3</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card  -->
+                                    <div class="ui-card">
+                                        <div class="ui-card-head">
+                                            <p>BRITISH AIR LINES</p>
+                                            <img src="../library/avatars/user.png" alt="" class="avatar shadow">
+                                        </div>
+                                        <div class="ui-card-body">
+                                            <p class="ui-date-start">05 Sept 2019</p>
+                                            <p class="ui-date-end">Au 17 Sept 2019</p>
+                                            <div class="chat-notification">
+                                                <div class="message-alert">
+                                                    <img src="../icons/message.svg" alt="">
+                                                </div>
+                                                <small>6</small>
+                                            </div>
+
+                                            <div class="attatchments-box">
+                                                <img src="../icons/attachment.svg" alt="">
+                                                <small>3</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- column -->
+                            <div class="ui-column">
+
+                                <p class="ui-column-title">Vérifications des pièces</p>
+
+                                <div class="ui-cards shadow">
+                                    <!-- card  -->
+                                    <div class="ui-card">
+                                        <div class="ui-card-head">
+                                            <p>BRITISH AIR LINES</p>
+                                            <img src="../library/avatars/user.png" alt="" class="avatar shadow">
+                                        </div>
+                                        <div class="ui-card-body">
+                                            <p class="ui-date-start">05 Sept 2019</p>
+                                            <p class="ui-date-end">Au 17 Sept 2019</p>
+                                            <div class="chat-notification">
+                                                <div class="message-alert">
+                                                    <img src="../icons/message.svg" alt="">
+                                                </div>
+                                                <small>6</small>
+                                            </div>
+
+                                            <div class="attatchments-box">
+                                                <img src="../icons/attachment.svg" alt="">
+                                                <small>3</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card  -->
+                                    <div class="ui-card">
+                                        <div class="ui-card-head">
+                                            <p>BRITISH AIR LINES</p>
+                                            <img src="../library/avatars/user.png" alt="" class="avatar shadow">
+                                        </div>
+                                        <div class="ui-card-body">
+                                            <p class="ui-date-start">05 Sept 2019</p>
+                                            <p class="ui-date-end">Au 17 Sept 2019</p>
+                                            <div class="chat-notification">
+                                                <div class="message-alert">
+                                                    <img src="../icons/message.svg" alt="">
+                                                </div>
+                                                <small>6</small>
+                                            </div>
+
+                                            <div class="attatchments-box">
+                                                <img src="../icons/attachment.svg" alt="">
+                                                <small>3</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card  -->
+                                    <div class="ui-card">
+                                        <div class="ui-card-head">
+                                            <p>BRITISH AIR LINES</p>
+                                            <img src="../library/avatars/user.png" alt="" class="avatar shadow">
+                                        </div>
+                                        <div class="ui-card-body">
+                                            <p class="ui-date-start">05 Sept 2019</p>
+                                            <p class="ui-date-end">Au 17 Sept 2019</p>
+                                            <div class="chat-notification">
+                                                <div class="message-alert">
+                                                    <img src="../icons/message.svg" alt="">
+                                                </div>
+                                                <small>6</small>
+                                            </div>
+
+                                            <div class="attatchments-box">
+                                                <img src="../icons/attachment.svg" alt="">
+                                                <small>3</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <!-- End app root  -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../packages/jquery/jquery-3.3.1.slim.min.js"></script>
+    <!-- jQuery UI  -->
+    <script src="../packages/jquery-ui/jquery-ui.js"></script>
+
+    <script src="../packages/bootstrap/js/popper.min.js"></script>
+    <script src="../packages/bootstrap/js/bootstrap.min.js"></script>
+    <!-- dateTimepeaker scripts  -->
+    <script src="../packages/moment/moment-with-locales.js"></script>
+    <script src="../packages/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <!-- End dateTimepeaker scripts  -->
+    <!-- bootstrap-select  -->
+    <script src="../packages/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <!-- end bootstrap-select  -->
+    <!-- main script (principale app script)  -->
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>

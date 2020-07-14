@@ -180,6 +180,28 @@ $(document).ready(function() {
 
 
         /*================= End Events ========================*/
+
+
+
+        /*================= Drag and drop Events ========================*/
+
+        function addListeners() {
+            $(".ui-card").draggable({
+                revert: "invalid",
+            });
+
+            $(".ui-column").droppable({
+                accept: ".ui-card",
+                drop: function(event, ui) {
+                    ui.draggable
+                        .css("left", "0")
+                        .css("top", "0")
+                        .appendTo($(this).find(".ui-cards"))
+                }
+            });
+        }
+        addListeners();
+
     } catch {
         console.log('something\'s wrong : this is error from main.js script');
     }
