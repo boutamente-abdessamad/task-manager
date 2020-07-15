@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Task manager</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../packages/bootstrap/css/bootstrap.min.css">
+    <!-- font-awesom styles  -->
+    <link rel="stylesheet" href="../packages/font-awesome/font-awesome.min.css">
+    <!-- font-awesom styles  -->
+    <!-- dateTimepiker style  -->
+    <link rel="stylesheet" href="../packages/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <!-- dateTimepiker style  -->
+    <!-- bootstrap select  -->
+    <link rel="stylesheet" href="../packages/bootstrap-select/css/bootstrap-select.min.css">
+    <!-- end bootstrap select -->
+    <!-- animate -->
+    <link rel="stylesheet" href="../packages/animate/css/animate.min.css" />
+    <!-- end animate -->
+    <!-- main style (principale app style)  -->
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+
+
+    <!-- start app root  -->
+    <main class="app-root news-feed-page">
+
+
+        <!-- header  -->
+
+        <header class="tm-header">
+
+            <nav>
+
+                <!-- logo  -->
+                <a href="" class="tm-logo">
+                    <img src="../library/logo/Logo.svg" alt="">
+                </a>
+
+                <!-- menu  -->
+                <ul class="tm-menu-items">
+                    <li>
+                        <a href="">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="" class="active">Tâches</a>
+                    </li>
+                </ul>
+
+                <!-- notifications  -->
+
+                <div class="notifications-area">
+
+                    <div class="notification-box">
+
+                        <div class="notification-bell-card">
+                            <a href="" class="notification-bell-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="bell-icon" src="../icons/bell.svg" alt="">
+                                <span class="notification-alert">1</span>
+                            </a>
+                            <div class="dropdown-menu">
+
+                                <div class="notification-items">
+                                    <div class="notification-item">
+                                        <div class="notification-icon">
+                                            <img src="../icons/time-red.svg" alt="">
+                                        </div>
+                                        <div class="notification-details">
+                                            <h2>La tâche 132 arrive à échéance aujourd’hui à 16h45</h2>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="notification-icon">
+                                            <img src="../icons/time-red.svg" alt="">
+                                        </div>
+                                        <div class="notification-details">
+                                            <h2>La tâche 132 arrive à échéance aujourd’hui à 16h45</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="notification-box">
+
+                        <div class="notification-user-card">
+                            <a href="" class="notification-user-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="user-icon" src="../library/avatars/user.png" alt="">
+                            </a>
+                            <div class="dropdown-menu">
+
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <!-- header  -->
+
+        <!-- page title  -->
+        <section class="page-head-area">
+
+            <div class="container">
+
+                <div class="page-head-box">
+
+                    <h2 class="page-title">Journal d’activités</h2>
+
+                    <div class="page-head-actions">
+
+                        <select class="selectpicker ui-select ui-select-default ui-select-xl" name="" id="">
+                        <option>Dernier mois</option>
+                        <option>Dernier mois</option>
+                        <option>Dernier mois</option>
+                      </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- end page title  -->
+
+
+        <section class="news-feed">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-12">
+
+                        <div class="news-feed-rows">
+                            <!-- col  -->
+                            <div class="news-feed-col shadow">
+
+                                <div class="nf-head">
+                                    <p>Ibrahim Rami a validé la nouvelle tâche demandée par «PHILIPS» via Email reçu sur taks@wecount.ma. </p>
+                                </div>
+                                <div class="nf-footer">
+
+                                    <div class="nv-alerts">
+                                        <span class="ui-alert danger mr-1"> 
+                                                
+                                            <img src="../icons/time-red.svg" alt="">
+                                            10/07/2020</span>
+                                        <span class="ui-alert warning">EN COURS</span>
+
+                                    </div>
+
+                                    <div class="nv-users">
+
+                                        <div class="user-info">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <p>Ibrahim Rami</p>
+                                        </div>
+
+                                        <div class="mark-info">
+                                            <img src="../icons/philips.svg" alt="">
+                                            <p>PHILIPS</p>
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <!-- col  -->
+                            <div class="news-feed-col shadow">
+
+                                <div class="nf-head">
+                                    <p>Ibrahim Rami a validé la nouvelle tâche demandée par «PHILIPS» via Email reçu sur taks@wecount.ma. </p>
+                                </div>
+                                <div class="nf-footer">
+
+                                    <div class="nv-alerts">
+                                        <span class="ui-alert danger mr-1"> 
+                                                
+                                            <img src="../icons/time-red.svg" alt="">
+                                            10/07/2020</span>
+                                        <span class="ui-alert warning">EN COURS</span>
+
+                                    </div>
+
+                                    <div class="nv-users">
+
+                                        <div class="user-info">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <p>Ibrahim Rami</p>
+                                        </div>
+
+                                        <div class="mark-info">
+                                            <img src="../icons/philips.svg" alt="">
+                                            <p>PHILIPS</p>
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <!-- col  -->
+                            <div class="news-feed-col shadow">
+
+                                <div class="nf-head">
+                                    <p>Ibrahim Rami a validé la nouvelle tâche demandée par «PHILIPS» via Email reçu sur taks@wecount.ma. </p>
+                                </div>
+                                <div class="nf-footer">
+
+                                    <div class="nv-alerts">
+                                        <span class="ui-alert danger mr-1"> 
+                                                
+                                            <img src="../icons/time-red.svg" alt="">
+                                            10/07/2020</span>
+                                        <span class="ui-alert warning">EN COURS</span>
+
+                                    </div>
+
+                                    <div class="nv-users">
+
+                                        <div class="user-info">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <p>Ibrahim Rami</p>
+                                        </div>
+
+                                        <div class="mark-info">
+                                            <img src="../icons/philips.svg" alt="">
+                                            <p>PHILIPS</p>
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <!-- col  -->
+                            <div class="news-feed-col shadow">
+
+                                <div class="nf-head">
+                                    <p>Ibrahim Rami a validé la nouvelle tâche demandée par «PHILIPS» via Email reçu sur taks@wecount.ma. </p>
+                                </div>
+                                <div class="nf-footer">
+
+                                    <div class="nv-alerts">
+                                        <span class="ui-alert danger mr-1"> 
+                                                
+                                            <img src="../icons/time-red.svg" alt="">
+                                            10/07/2020</span>
+                                        <span class="ui-alert warning">EN COURS</span>
+
+                                    </div>
+
+                                    <div class="nv-users">
+
+                                        <div class="user-info">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <p>Ibrahim Rami</p>
+                                        </div>
+
+                                        <div class="mark-info">
+                                            <img src="../icons/philips.svg" alt="">
+                                            <p>PHILIPS</p>
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <!-- col  -->
+                            <div class="news-feed-col shadow">
+
+                                <div class="nf-head">
+                                    <p>Ibrahim Rami a validé la nouvelle tâche demandée par «PHILIPS» via Email reçu sur taks@wecount.ma. </p>
+                                </div>
+                                <div class="nf-footer">
+
+                                    <div class="nv-alerts">
+                                        <span class="ui-alert danger mr-1"> 
+                                                
+                                            <img src="../icons/time-red.svg" alt="">
+                                            10/07/2020</span>
+                                        <span class="ui-alert warning">EN COURS</span>
+
+                                    </div>
+
+                                    <div class="nv-users">
+
+                                        <div class="user-info">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <p>Ibrahim Rami</p>
+                                        </div>
+
+                                        <div class="mark-info">
+                                            <img src="../icons/philips.svg" alt="">
+                                            <p>PHILIPS</p>
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <!-- col  -->
+                            <div class="news-feed-col shadow">
+
+                                <div class="nf-head">
+                                    <p>Ibrahim Rami a validé la nouvelle tâche demandée par «PHILIPS» via Email reçu sur taks@wecount.ma. </p>
+                                </div>
+                                <div class="nf-footer">
+
+                                    <div class="nv-alerts">
+                                        <span class="ui-alert danger mr-1"> 
+                                                
+                                            <img src="../icons/time-red.svg" alt="">
+                                            10/07/2020</span>
+                                        <span class="ui-alert warning">EN COURS</span>
+
+                                    </div>
+
+                                    <div class="nv-users">
+
+                                        <div class="user-info">
+                                            <img src="../library/avatars/user.png" alt="">
+                                            <p>Ibrahim Rami</p>
+                                        </div>
+
+                                        <div class="mark-info">
+                                            <img src="../icons/philips.svg" alt="">
+                                            <p>PHILIPS</p>
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- End app root  -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../packages/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="../packages/bootstrap/js/popper.min.js"></script>
+    <script src="../packages/bootstrap/js/bootstrap.min.js"></script>
+    <!-- dateTimepeaker scripts  -->
+    <script src="../packages/moment/moment-with-locales.js"></script>
+    <script src="../packages/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <!-- End dateTimepeaker scripts  -->
+    <!-- bootstrap-select  -->
+    <script src="../packages/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <!-- end bootstrap-select  -->
+    <!-- main script (principale app script)  -->
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>

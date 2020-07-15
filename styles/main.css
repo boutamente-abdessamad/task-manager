@@ -216,7 +216,7 @@ label {
 .ui-alert img {
     height: 12px;
     width: 12px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .ui-alert.danger {
@@ -2428,4 +2428,86 @@ ul.tm-menu-items li {
 
 .collaborateur-card-footer .task-progress {
     width: 50%;
+}
+
+.collaborateur-card-body {
+    display: flex;
+}
+
+
+/* news-feed-rows */
+
+.news-feed-rows {
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    padding: 58px;
+}
+
+.news-feed-col {
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 16px 30px;
+    margin-bottom: 17px;
+}
+
+.news-feed-col .nf-head p {
+    color: #131313;
+    font-size: 16px;
+    font-family: Roboto-Bold;
+}
+
+.news-feed-col .nf-footer {
+    display: flex;
+    border-top: 1px solid #EFEFEF;
+    justify-content: space-between;
+    padding-top: 15px;
+    align-items: center;
+}
+
+.news-feed-col .nv-users {
+    display: flex;
+    align-items: center;
+}
+
+.news-feed-col .nf-head {
+    padding-bottom: 15px;
+}
+
+.news-feed-col .nv-alerts {
+    display: flex;
+    align-items: center;
+}
+
+.user-info,
+.mark-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    border: 2px solid #FFFFFF;
+}
+
+.user-info img,
+.mark-info img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    box-shadow: 0 0 2px 1px #00000057;
+}
+
+.user-info p,
+.mark-info p {
+    font-size: 13px;
+    font-family: Roboto-Medium;
+    color: #1B2153;
+}
+
+.user-info {
+    margin-right: 15px;
+}
+
+.news-feed-page .page-head-box {
+    padding: 0;
 }
