@@ -618,6 +618,18 @@ ul.tm-menu-items li {
     background-color: #FFFFFF;
 }
 
+.ui-button-tansparent {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.ui-button-tansparent:hover {
+    color: #27307E;
+    border: 1px solid #27307E;
+    background-color: #FFFFFF;
+}
+
 
 /* buttons toggle  */
 
@@ -2351,6 +2363,10 @@ ul.tm-menu-items li {
 
 /* =====================board-area======================== */
 
+.collaborateurs-columns {
+    display: flex;
+}
+
 .collaborateur-column {
     background-color: #EBECF0;
     border-radius: 10px;
@@ -2510,4 +2526,106 @@ ul.tm-menu-items li {
 
 .news-feed-page .page-head-box {
     padding: 0;
+}
+
+
+/* panification-zone */
+
+.panification-zone .ui-table {
+    background-color: #FFFFFF;
+}
+
+.panification-zone .ui-table .table-col {
+    display: flex;
+    align-items: center;
+}
+
+.panification-zone .ui-table .table-col h2 {
+    color: #000000;
+    font-size: 15px;
+    font-family: Roboto-Bold;
+}
+
+.panification-zone .ui-table thead th {
+    vertical-align: bottom;
+    border-bottom: none;
+    line-height: 55px;
+}
+
+.panification-zone .ui-table tbody tr:nth-child(2n+1) {
+    background-color: #F8F8F8;
+    line-height: 40px;
+}
+
+
+/* manage-tasks */
+
+.manage-tasks-title {
+    padding-bottom: 40px;
+    text-align: center;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.manage-tasks-title img {
+    width: 42px;
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.manage-tasks-title h2 {
+    font-size: 28px;
+    color: #262626;
+    font-family: Roboto-Medium;
+    margin-bottom: 15px;
+}
+
+.manage-tasks-title h3 {
+    color: #5A5A5A;
+    font-size: 16px;
+    font-family: Roboto-Medium;
+}
+
+.manage-tasks-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 34px 0;
+}
+
+.tasks-total,
+.ttasks-duration {
+    width: 50%;
+}
+
+.tasks-total {
+    border-right: 1px solid #E2E2E2;
+}
+
+.tasks-total h2 {
+    font-size: 42px;
+    color: #262626;
+    font-family: Roboto-Medium;
+}
+
+.tasks-total p {
+    font-size: 16px;
+    color: #262626;
+    font-family: Roboto-Medium;
+}
+
+.tasks-duration p {
+    font-size: 20px;
+    color: #262626;
+    font-family: Roboto-Medium;
+}
+
+.progress-dedails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-dedails p {
+    font-size: 16px;
+    color: #262626;
+    font-family: Roboto-Medium;
 }

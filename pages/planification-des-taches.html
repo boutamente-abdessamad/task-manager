@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Task manager</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../packages/bootstrap/css/bootstrap.min.css">
+    <!-- font-awesom styles  -->
+    <link rel="stylesheet" href="../packages/font-awesome/font-awesome.min.css">
+    <!-- font-awesom styles  -->
+    <!-- dateTimepiker style  -->
+    <link rel="stylesheet" href="../packages/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <!-- dateTimepiker style  -->
+    <!-- bootstrap select  -->
+    <link rel="stylesheet" href="../packages/bootstrap-select/css/bootstrap-select.min.css">
+    <!-- end bootstrap select -->
+    <!-- animate -->
+    <link rel="stylesheet" href="../packages/animate/css/animate.min.css" />
+    <!-- end animate -->
+    <!-- main style (principale app style)  -->
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+
+
+    <!-- start app root  -->
+    <main class="app-root">
+
+
+        <!-- header  -->
+
+        <header class="tm-header">
+
+            <nav>
+
+                <!-- logo  -->
+                <a href="" class="tm-logo">
+                    <img src="../library/logo/Logo.svg" alt="">
+                </a>
+
+                <!-- menu  -->
+                <ul class="tm-menu-items">
+                    <li>
+                        <a href="../pages/liste-des-taches.html">Liste</a>
+                    </li>
+                    <li>
+                        <a href="../pages/triage-des-taches.html">triage des taches</a>
+                    </li>
+                    <li>
+                        <a href="../pages/kanban-collaborateur.html">Kanban Board</a>
+                    </li>
+                    <li>
+                        <a href="../pages/kanban-board.html">Kanban Board</a>
+                    </li>
+                    <li>
+                        <a href="../pages/parametrage.html">parametrage</a>
+                    </li>
+                    <li>
+                        <a href="../pages/pages/planification-des-taches.html" class="active">Planification</a>
+                    </li>
+                </ul>
+
+                <!-- notifications  -->
+
+                <div class="notifications-area">
+
+                    <div class="notification-box">
+
+                        <div class="notification-bell-card">
+                            <a href="" class="notification-bell-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="bell-icon" src="../icons/bell.svg" alt="">
+                                <span class="notification-alert">1</span>
+                            </a>
+                            <div class="dropdown-menu">
+
+                                <div class="notification-items">
+                                    <div class="notification-item">
+                                        <div class="notification-icon">
+                                            <img src="../icons/time-red.svg" alt="">
+                                        </div>
+                                        <div class="notification-details">
+                                            <h2>La tâche 132 arrive à échéance aujourd’hui à 16h45</h2>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="notification-icon">
+                                            <img src="../icons/time-red.svg" alt="">
+                                        </div>
+                                        <div class="notification-details">
+                                            <h2>La tâche 132 arrive à échéance aujourd’hui à 16h45</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="notification-box">
+
+                        <div class="notification-user-card">
+                            <a href="" class="notification-user-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="user-icon" src="../library/avatars/user.png" alt="">
+                            </a>
+                            <div class="dropdown-menu">
+
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <!-- header  -->
+
+        <!-- page title  -->
+        <section class="page-head-area">
+
+            <div class="container-fluid">
+
+                <div class="page-head-box">
+
+                    <h2 class="page-title">Planification des tâches récurrentes</h2>
+
+                    <div class="page-head-actions">
+
+                        <a href="" class="ui-button-primiry btn ml-2">Enregistrer</a>
+                        <a href="" class="ui-button-tansparent btn ml-2" data-toggle="modal" data-target="#manageTasks">Générer les tâches</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- end page title  -->
+
+
+        <section class="panification-zone">
+
+            <table class="table ui-table">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">TVA Mensuelle</th>
+                        <th scope="col">Reporting Mensuelle</th>
+                        <th scope="col">Audit Digital</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            <div class="table-col">
+                                <h2>BRITISH AIR LINES</h2>
+                            </div>
+                        </th>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                                <div class="utasks-collaborateus w-100">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <div class="show-collaborateurs-panel w-100">
+                                        <a href="" class="ui-plus">+</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                                <div class="utasks-collaborateus">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <a href="" class="ui-plus">+</a>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="table-col">
+                                <h2>BRITISH AIR LINES</h2>
+                            </div>
+                        </th>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                                <div class="utasks-collaborateus w-100">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <div class="show-collaborateurs-panel w-100">
+                                        <a href="" class="ui-plus">+</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                                <div class="utasks-collaborateus">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <a href="" class="ui-plus">+</a>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="table-col">
+                                <h2>BRITISH AIR LINES</h2>
+                            </div>
+                        </th>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                                <div class="utasks-collaborateus w-100">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <div class="show-collaborateurs-panel w-100">
+                                        <a href="" class="ui-plus">+</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                                <div class="utasks-collaborateus">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <a href="" class="ui-plus">+</a>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="table-col">
+                                <h2>BRITISH AIR LINES</h2>
+                            </div>
+                        </th>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                                <div class="utasks-collaborateus w-100">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <div class="show-collaborateurs-panel w-100">
+                                        <a href="" class="ui-plus">+</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                                <div class="utasks-collaborateus">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <a href="" class="ui-plus">+</a>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="table-col">
+                                <h2>BRITISH AIR LINES</h2>
+                            </div>
+                        </th>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                                <div class="utasks-collaborateus w-100">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <div class="show-collaborateurs-panel w-100">
+                                        <a href="" class="ui-plus">+</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                                <div class="utasks-collaborateus">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <a href="" class="ui-plus">+</a>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="table-col">
+                                <h2>BRITISH AIR LINES</h2>
+                            </div>
+                        </th>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                                <div class="utasks-collaborateus w-100">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <div class="show-collaborateurs-panel w-100">
+                                        <a href="" class="ui-plus">+</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                                <div class="utasks-collaborateus">
+                                    <!-- users-attatched -->
+                                    <div class="users-attatched mt-0">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <img src="../library/avatars/user.png" alt="">
+                                        <span class="more-attatched">+4</span>
+                                    </div>
+                                    <a href="" class="ui-plus">+</a>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="table-col">
+                                <div class="ui-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-display"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+
+    </main>
+
+    <!-- End app root  -->
+    <!--==================================================-->
+    <!--============= manage tasks  =================-->
+    <!--==================================================-->
+
+    <div class="modal fade" id="manageTasks" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-end">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="../icons/close.svg" alt="">
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="manage-tasks-title">
+                        <img src="../icons/clipboard.svg" alt="">
+                        <h2>Générer les tâches</h2>
+                        <h3>Seules les tâches non encore <br> générées vont l’être.</h3>
+                    </div>
+                    <div class="manage-tasks-details">
+                        <div class="tasks-total">
+                            <h2>1390</h2>
+                            <p>Tâches à générer </p>
+                        </div>
+                        <div class="tasks-duration">
+                            <p>Du 2/06/2020 </p>
+                            <p>Au 31/12/2020</p>
+                        </div>
+                    </div>
+                    <form action="">
+                        <input type="submit" value="Générer les tâches" class="ui-button-primiry w-100">
+                        <div class="progress-dedails">
+                            <p>Génération des tâches en cours …</p>
+                            <p>30%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="progress primary" style="width: 30%;"></span>
+                        </div>
+                        <div class="progress-dedails justify-content-end">
+                            <p>689/1390 tâches générées</p>
+                        </div>
+                        <div class="progress-dedails">
+                            <p>Génération des tâches terminée</p>
+                            <p class="text-success">100%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="progress success" style="width: 100%;"></span>
+                        </div>
+                        <div class="progress-dedails justify-content-end">
+                            <p>1390/1390 tâches générées</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==================================================-->
+    <!--=============== COLLABORATEURS LIST PANEL  =======-->
+    <!--==================================================-->
+    <div class="add-collaborateurs-panel shadow animate__animated animate__fadeInUp">
+        <div class="acp-head">
+            <h2 class="text-default">COLLABORATEURS</h2>
+            <button type="button" class="close close-collaborateurs-panel">
+                    <img src="../icons/close.svg" alt="">
+                </button>
+        </div>
+        <div class="acp-body">
+            <div class="collaborateurs-list">
+                <div class="collaborateur-item">
+                    <div class="form-check">
+                        <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                    </div>
+                </div>
+                <div class="collaborateur-item">
+                    <div class="form-check">
+                        <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                    </div>
+                </div>
+                <div class="collaborateur-item">
+                    <div class="form-check">
+                        <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                    </div>
+                </div>
+                <div class="collaborateur-item">
+                    <div class="form-check">
+                        <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                    </div>
+                </div>
+                <div class="collaborateur-item">
+                    <div class="form-check">
+                        <label>
+                                <input type="checkbox" name="check">  
+                                <span class="collaborateurs-box"><img src="../library/avatars/user.png" alt="">
+                                    <p>Salim Bentaleb</p></span>
+                                
+                            </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="acp-footer">
+            <button class="ui-button-primiry btn-xl w-100">
+                    Ajouter
+                </button>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../packages/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="../packages/bootstrap/js/popper.min.js"></script>
+    <script src="../packages/bootstrap/js/bootstrap.min.js"></script>
+    <!-- dateTimepeaker scripts  -->
+    <script src="../packages/moment/moment-with-locales.js"></script>
+    <script src="../packages/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <!-- End dateTimepeaker scripts  -->
+    <!-- bootstrap-select  -->
+    <script src="../packages/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <!-- end bootstrap-select  -->
+    <!-- main script (principale app script)  -->
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>
